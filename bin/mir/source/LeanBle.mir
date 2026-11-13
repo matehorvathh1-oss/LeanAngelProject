@@ -1,0 +1,1425 @@
+[ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [BluetoothLowEnergy,1,13,31]; @symbol_usingAlias = [Ble,1,35,38]; ]
+using Toybox.BluetoothLowEnergy as :Ble;
+[ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [Lang,2,13,17]; ]
+using Toybox.Lang;
+[ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [System,3,13,19]; ]
+using Toybox.System;
+[ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 20; @symbol_classdef = [LeanBle,20,6,13]; @symbol_extends<0> = [Ble,20,22,25]; @symbol_extends<1> = [BleDelegate,20,26,37]; ]
+class LeanBle extends Ble.BleDelegate {
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 20; ]
+    <init> {
+    }
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 20; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 23; @position = 8; @symbol_vardef = [szog,23,8,12]; ]
+    var szog = null;
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 24; @position = 8; @symbol_vardef = [allapot,24,8,15]; ]
+    var allapot = "Indul";
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 27; @position = 8; @symbol_vardef = [tick,27,8,12]; ]
+    var tick = 0;
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 28; @position = 8; @symbol_vardef = [profilHivas,28,8,19]; ]
+    var profilHivas = 0;
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 29; @position = 8; @symbol_vardef = [profilStatusz,29,8,21]; ]
+    var profilStatusz = -1;
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 30; @position = 8; @symbol_vardef = [keresesAllapot,30,8,22]; ]
+    var keresesAllapot = -1;
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 31; @position = 8; @symbol_vardef = [talalatSzam,31,8,19]; ]
+    var talalatSzam = 0;
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 32; @position = 8; @symbol_vardef = [utolsoNev,32,8,17]; ]
+    var utolsoNev = "-";
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 33; @position = 8; @symbol_vardef = [utolsoRssi,33,8,18]; ]
+    var utolsoRssi = 0;
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 34; @position = 8; @symbol_vardef = [kapcsolatKod,34,8,20]; ]
+    var kapcsolatKod = -1;
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 35; @position = 8; @symbol_vardef = [adatSzam,35,8,16]; ]
+    var adatSzam = 0;
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 36; @position = 8; @symbol_vardef = [olvLat,36,8,14]; ]
+    var olvLat = 0;
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 37; @position = 8; @symbol_vardef = [masodperc,37,8,17]; ]
+    var masodperc = 0;
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 38; @position = 8; @symbol_vardef = [olvasSzam,38,8,17]; ]
+    var olvasSzam = 0;
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 39; @position = 8; @symbol_vardef = [hiba,39,8,12]; ]
+    var hiba = "";
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 42; @position = 8; @symbol_vardef = [_szolgUuid,42,8,18]; ]
+    var _szolgUuid;
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 43; @position = 8; @symbol_vardef = [_szogUuid,43,8,17]; ]
+    var _szogUuid;
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 44; @position = 8; @symbol_vardef = [_nev,44,8,12]; ]
+    var _nev = "Lean";
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 45; @position = 8; @symbol_vardef = [_indult,45,8,15]; ]
+    var _indult = false;
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 46; @position = 8; @symbol_vardef = [_kapcsolodva,46,8,20]; ]
+    var _kapcsolodva = false;
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 47; @position = 8; @symbol_vardef = [_utolsoKeresesTick,47,8,26]; ]
+    var _utolsoKeresesTick = 0;
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 48; @position = 8; @symbol_vardef = [_eszkoz,48,8,15]; ]
+    var _eszkoz = null;
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 49; @position = 8; @symbol_vardef = [_olvasFolyamatban,49,8,25]; ]
+    var _olvasFolyamatban = false;
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 50; @position = 8; @symbol_vardef = [_olvasKerveMs,50,8,21]; ]
+    var _olvasKerveMs = 0;
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 51; @position = 8; @symbol_vardef = [_olvasKerveTick,51,8,23]; ]
+    var _olvasKerveTick = 0;
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 53; @symbol_functiondef = [initialize,53,13,23]; ]
+    function initialize() as Void {
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_53_26_58_4_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 54 8 ]
+        symbol [ BleDelegate %tmp.2 54 8 19 ];
+        %tmp.2 = getv ? :BleDelegate;
+        symbol [ initialize %tmp.3 54 20 30 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 56 8 ]
+        symbol [ Ble %tmp.4 56 21 24 ];
+        %tmp.4 = getm $.Toybox.BluetoothLowEnergy;
+        symbol [ stringToUuid %tmp.5 56 25 37 ];
+        %tmp.5 = getv function %tmp.4 :stringToUuid;
+        %tmp.6 = "7d1e0001-5a3c-4b8e-9f21-6c0a1d2e3f40";
+        %tmp.7 = invoke %tmp.4 %tmp.5(%tmp.6);
+        symbol [ _szolgUuid ? 56 8 18 ];
+        putv self :_szolgUuid %tmp.7;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 57 8 ]
+        symbol [ Ble %tmp.8 57 21 24 ];
+        %tmp.8 = getm $.Toybox.BluetoothLowEnergy;
+        symbol [ stringToUuid %tmp.9 57 25 37 ];
+        %tmp.9 = getv function %tmp.8 :stringToUuid;
+        %tmp.10 = "7d1e0002-5a3c-4b8e-9f21-6c0a1d2e3f40";
+        %tmp.11 = invoke %tmp.8 %tmp.9(%tmp.10);
+        symbol [ _szogUuid ? 57 8 17 ];
+        putv self :_szogUuid %tmp.11;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_53_26_58_4_stop:
+    }
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 61; @symbol_functiondef = [figyelo,61,13,20]; ]
+    function figyelo() {
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_61_23_82_4_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 62 8 ]
+        symbol [ tick %tmp.1 62 8 12 ];
+        %tmp.1 = getv self :tick;
+        %tmp.2 = 1;
+        %tmp.3 = add %tmp.1 %tmp.2;
+        symbol [ tick ? 62 8 12 ];
+        putv self :tick dup %tmp.3;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 63 8 ]
+        symbol [ System %tmp.4 63 20 26 ];
+        %tmp.4 = getm $.Toybox.System;
+        symbol [ getTimer %tmp.5 63 27 35 ];
+        %tmp.5 = getv function %tmp.4 :getTimer;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        %tmp.7 = 1000;
+        %tmp.8 = div %tmp.6 %tmp.7;
+        symbol [ masodperc ? 63 8 17 ];
+        putv self :masodperc %tmp.8;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 66 8 ]
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_66_8_70_8_if_stmt:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_66_12_66_32_begin:
+        symbol [ _indult %tmp.10 66 13 20 ];
+        %tmp.10 = getv ? :_indult;
+        %tmp.11 = not %tmp.10;
+        bf %tmp.11 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_66_8_70_8_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_66_24_66_32_true:
+        symbol [ tick %tmp.13 66 24 28 ];
+        %tmp.13 = getv ? :tick;
+        %tmp.14 = 2;
+        %tmp.15 = gte %tmp.13 %tmp.14;
+        push %tmp.15;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_66_24_66_32_end:
+        %tmp.16 = phi [%tmp.11 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_66_12_66_32_begin] [%tmp.15 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_66_24_66_32_true] [%tmp.16 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_66_24_66_32_end];
+        bf %tmp.16 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_66_8_70_8_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_66_8_70_8_if_true:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_66_35_70_8_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 67 12 ]
+        %tmp.17 = true;
+        symbol [ _indult ? 67 12 19 ];
+        putv self :_indult %tmp.17;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 68 12 ]
+        %tmp.18 = self;
+        symbol [ indit %tmp.19 68 12 17 ];
+        %tmp.19 = getv function %tmp.18 :indit;
+        invoke %tmp.18 %tmp.19();
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 69 12 ]
+        ret ?;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_66_35_70_8_stop:
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_66_8_70_8_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_66_8_70_8_if_end:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 74 8 ]
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_74_8_76_8_if_stmt:
+        symbol [ _kapcsolodva %tmp.21 74 12 24 ];
+        %tmp.21 = getv ? :_kapcsolodva;
+        bf %tmp.21 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_74_8_76_8_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_74_8_76_8_if_true:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_74_26_76_8_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 75 12 ]
+        %tmp.22 = self;
+        symbol [ _olvas %tmp.23 75 12 18 ];
+        %tmp.23 = getv function %tmp.22 :_olvas;
+        invoke %tmp.22 %tmp.23();
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_74_26_76_8_stop:
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_74_8_76_8_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_74_8_76_8_if_end:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 79 8 ]
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_79_8_81_8_if_stmt:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_79_12_79_71_begin:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_79_12_79_24_begin:
+        symbol [ _indult %tmp.25 79 12 19 ];
+        %tmp.25 = getv ? :_indult;
+        bf %tmp.25 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_79_8_81_8_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_79_23_79_24_true:
+        symbol [ _kapcsolodva %tmp.27 79 24 36 ];
+        %tmp.27 = getv ? :_kapcsolodva;
+        %tmp.28 = not %tmp.27;
+        push %tmp.28;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_79_23_79_24_end:
+        %tmp.29 = phi [%tmp.25 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_79_12_79_24_begin] [%tmp.28 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_79_23_79_24_true] [%tmp.29 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_79_23_79_24_end];
+        bf %tmp.29 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_79_8_81_8_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_79_40_79_71_true:
+        symbol [ tick %tmp.31 79 41 45 ];
+        %tmp.31 = getv ? :tick;
+        symbol [ _utolsoKeresesTick %tmp.33 79 48 66 ];
+        %tmp.33 = getv ? :_utolsoKeresesTick;
+        %tmp.34 = sub %tmp.31 %tmp.33;
+        %tmp.35 = 15;
+        %tmp.36 = gte %tmp.34 %tmp.35;
+        push %tmp.36;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_79_40_79_71_end:
+        %tmp.37 = phi [%tmp.29 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_79_12_79_71_begin] [%tmp.36 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_79_40_79_71_true] [%tmp.37 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_79_40_79_71_end];
+        bf %tmp.37 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_79_8_81_8_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_79_8_81_8_if_true:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_79_75_81_8_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 80 12 ]
+        %tmp.38 = self;
+        symbol [ keresesUjra %tmp.39 80 12 23 ];
+        %tmp.39 = getv function %tmp.38 :keresesUjra;
+        invoke %tmp.38 %tmp.39();
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_79_75_81_8_stop:
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_79_8_81_8_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_79_8_81_8_if_end:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_61_23_82_4_stop:
+    }
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 85; @symbol_functiondef = [indit,85,13,18]; ]
+    function indit() {
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_85_21_100_4_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 86 8 ]
+        %tmp.1 = "Profil reg...";
+        symbol [ allapot ? 86 8 15 ];
+        putv self :allapot %tmp.1;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 87 8 ]
+        [ "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_85_21_100_4_start" "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_85_21_100_4_stop" ]
+        %profil.1 = local;
+        symbol [ profil %profil.1 87 12 18 ];
+        %tmp.2 = newd 2;
+        %tmp.4 = const :uuid;
+        symbol [ uuid %tmp.4 88 13 17 const ];
+        symbol [ _szolgUuid %tmp.6 88 21 31 ];
+        %tmp.6 = getv ? :_szolgUuid;
+        %tmp.7 = dup %tmp.2;
+        %tmp.8 = aputv %tmp.7 %tmp.4 %tmp.6;
+        %tmp.10 = const :characteristics;
+        symbol [ characteristics %tmp.10 89 13 28 const ];
+        %tmp.11 = newa 1;
+        %tmp.12 = newd 2;
+        %tmp.14 = const :uuid;
+        symbol [ uuid %tmp.14 90 17 21 const ];
+        symbol [ _szogUuid %tmp.16 90 25 34 ];
+        %tmp.16 = getv ? :_szogUuid;
+        %tmp.17 = dup %tmp.12;
+        %tmp.18 = aputv %tmp.17 %tmp.14 %tmp.16;
+        %tmp.20 = const :descriptors;
+        symbol [ descriptors %tmp.20 91 17 28 const ];
+        %tmp.21 = newa 1;
+        symbol [ Ble %tmp.22 91 34 37 ];
+        %tmp.22 = getm $.Toybox.BluetoothLowEnergy;
+        symbol [ cccdUuid %tmp.23 91 38 46 ];
+        %tmp.23 = getv function %tmp.22 :cccdUuid;
+        %tmp.24 = invoke %tmp.22 %tmp.23();
+        %tmp.25 = dup %tmp.21;
+        %tmp.26 = aputv %tmp.25 0 %tmp.24;
+        %tmp.27 = dup %tmp.18;
+        %tmp.28 = aputv %tmp.27 %tmp.20 %tmp.26;
+        %tmp.29 = dup %tmp.11;
+        %tmp.30 = aputv %tmp.29 0 %tmp.28;
+        %tmp.31 = dup %tmp.8;
+        %tmp.32 = aputv %tmp.31 %tmp.10 %tmp.30;
+        lputv %profil.1 %tmp.32;
+        symbol [ profil %profil.1 87 12 18 ];
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 94 8 ]
+        try @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_94_8_98_8_beginTry @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_94_8_98_8_endTry @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_94_8_98_8_catch @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_94_8_98_8_finally;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_94_8_98_8_beginTry:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_94_12_96_8_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 95 12 ]
+        symbol [ Ble %tmp.33 95 12 15 ];
+        %tmp.33 = getm $.Toybox.BluetoothLowEnergy;
+        symbol [ registerProfile %tmp.34 95 16 31 ];
+        %tmp.34 = getv function %tmp.33 :registerProfile;
+        %tmp.35 = lgetv %profil.1;
+        symbol [ profil %tmp.35 95 32 38 ];
+        invoke %tmp.33 %tmp.34(%tmp.35);
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_94_12_96_8_stop:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_94_8_98_8_endTry:
+        jsr @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_94_8_98_8_finally;
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_94_8_98_8_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_94_8_98_8_catch:
+        %tmp.36 = exception;
+        push %tmp.36;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 96 10 ]
+        [ "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_94_8_98_8_catch" "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_96_10_98_8_end" ]
+        %e.2 = local;
+        symbol [ e %e.2 96 17 18 ];
+        %tmp.37 = dup %tmp.36;
+        lputv %e.2 %tmp.37;
+        symbol [ e %e.2 96 17 18 ];
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_96_20_98_8_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 97 12 ]
+        %tmp.38 = "reg:";
+        %tmp.39 = lgetv %e.2;
+        symbol [ e %tmp.39 97 28 29 ];
+        symbol [ getErrorMessage %tmp.40 97 30 45 ];
+        %tmp.40 = getv function %tmp.39 :getErrorMessage;
+        %tmp.41 = invoke %tmp.39 %tmp.40();
+        %tmp.42 = add %tmp.38 %tmp.41;
+        symbol [ hiba ? 97 12 16 ];
+        putv self :hiba %tmp.42;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_96_20_98_8_stop:
+        jsr @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_94_8_98_8_finally;
+        pop;
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_94_8_98_8_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_96_10_98_8_end:
+        try @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_94_8_98_8_catch @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_96_10_98_8_end @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_96_10_98_8_end @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_94_8_98_8_finally;
+        jsr @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_94_8_98_8_finally;
+        throw %tmp.36;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_94_8_98_8_finally:
+        jsrret;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_94_8_98_8_end:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 99 8 ]
+        %tmp.43 = self;
+        symbol [ keresesIndit %tmp.44 99 8 20 ];
+        %tmp.44 = getv function %tmp.43 :keresesIndit;
+        invoke %tmp.43 %tmp.44();
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_85_21_100_4_stop:
+    }
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 102; @symbol_functiondef = [keresesIndit,102,13,25]; ]
+    function keresesIndit() {
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_102_28_111_4_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 103 8 ]
+        symbol [ tick %tmp.2 103 29 33 ];
+        %tmp.2 = getv ? :tick;
+        symbol [ _utolsoKeresesTick ? 103 8 26 ];
+        putv self :_utolsoKeresesTick %tmp.2;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 104 8 ]
+        try @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_104_8_110_8_beginTry @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_104_8_110_8_endTry @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_104_8_110_8_catch @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_104_8_110_8_finally;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_104_8_110_8_beginTry:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_104_12_107_8_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 105 12 ]
+        symbol [ Ble %tmp.3 105 12 15 ];
+        %tmp.3 = getm $.Toybox.BluetoothLowEnergy;
+        symbol [ setScanState %tmp.4 105 16 28 ];
+        %tmp.4 = getv function %tmp.3 :setScanState;
+        symbol [ Ble %tmp.5 105 29 32 ];
+        %tmp.5 = getm $.Toybox.BluetoothLowEnergy;
+        symbol [ SCAN_STATE_SCANNING %tmp.6 105 33 52 ];
+        %tmp.6 = getv %tmp.5 :SCAN_STATE_SCANNING;
+        invoke %tmp.3 %tmp.4(%tmp.6);
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 106 12 ]
+        %tmp.7 = "Kereses...";
+        symbol [ allapot ? 106 12 19 ];
+        putv self :allapot %tmp.7;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_104_12_107_8_stop:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_104_8_110_8_endTry:
+        jsr @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_104_8_110_8_finally;
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_104_8_110_8_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_104_8_110_8_catch:
+        %tmp.8 = exception;
+        push %tmp.8;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 107 10 ]
+        [ "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_104_8_110_8_catch" "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_107_10_110_8_end" ]
+        %e.1 = local;
+        symbol [ e %e.1 107 17 18 ];
+        %tmp.9 = dup %tmp.8;
+        lputv %e.1 %tmp.9;
+        symbol [ e %e.1 107 17 18 ];
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_107_20_110_8_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 108 12 ]
+        %tmp.10 = "scan:";
+        %tmp.11 = lgetv %e.1;
+        symbol [ e %tmp.11 108 29 30 ];
+        symbol [ getErrorMessage %tmp.12 108 31 46 ];
+        %tmp.12 = getv function %tmp.11 :getErrorMessage;
+        %tmp.13 = invoke %tmp.11 %tmp.12();
+        %tmp.14 = add %tmp.10 %tmp.13;
+        symbol [ hiba ? 108 12 16 ];
+        putv self :hiba %tmp.14;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 109 12 ]
+        %tmp.15 = "Scan hiba";
+        symbol [ allapot ? 109 12 19 ];
+        putv self :allapot %tmp.15;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_107_20_110_8_stop:
+        jsr @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_104_8_110_8_finally;
+        pop;
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_104_8_110_8_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_107_10_110_8_end:
+        try @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_104_8_110_8_catch @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_107_10_110_8_end @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_107_10_110_8_end @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_104_8_110_8_finally;
+        jsr @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_104_8_110_8_finally;
+        throw %tmp.8;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_104_8_110_8_finally:
+        jsrret;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_104_8_110_8_end:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_102_28_111_4_stop:
+    }
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 113; @symbol_functiondef = [keresesUjra,113,13,24]; ]
+    function keresesUjra() {
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_113_27_120_4_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 114 8 ]
+        try @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_114_8_118_8_beginTry @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_114_8_118_8_endTry @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_114_8_118_8_catch @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_114_8_118_8_finally;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_114_8_118_8_beginTry:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_114_12_116_8_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 115 12 ]
+        symbol [ Ble %tmp.1 115 12 15 ];
+        %tmp.1 = getm $.Toybox.BluetoothLowEnergy;
+        symbol [ setScanState %tmp.2 115 16 28 ];
+        %tmp.2 = getv function %tmp.1 :setScanState;
+        symbol [ Ble %tmp.3 115 29 32 ];
+        %tmp.3 = getm $.Toybox.BluetoothLowEnergy;
+        symbol [ SCAN_STATE_OFF %tmp.4 115 33 47 ];
+        %tmp.4 = getv %tmp.3 :SCAN_STATE_OFF;
+        invoke %tmp.1 %tmp.2(%tmp.4);
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_114_12_116_8_stop:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_114_8_118_8_endTry:
+        jsr @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_114_8_118_8_finally;
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_114_8_118_8_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_114_8_118_8_catch:
+        %tmp.5 = exception;
+        push %tmp.5;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 116 10 ]
+        [ "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_114_8_118_8_catch" "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_116_10_118_8_end" ]
+        %e.1 = local;
+        symbol [ e %e.1 116 17 18 ];
+        %tmp.6 = dup %tmp.5;
+        lputv %e.1 %tmp.6;
+        symbol [ e %e.1 116 17 18 ];
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_116_20_118_8_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 117 12 ]
+        %tmp.7 = "scanoff:";
+        %tmp.8 = lgetv %e.1;
+        symbol [ e %tmp.8 117 32 33 ];
+        symbol [ getErrorMessage %tmp.9 117 34 49 ];
+        %tmp.9 = getv function %tmp.8 :getErrorMessage;
+        %tmp.10 = invoke %tmp.8 %tmp.9();
+        %tmp.11 = add %tmp.7 %tmp.10;
+        symbol [ hiba ? 117 12 16 ];
+        putv self :hiba %tmp.11;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_116_20_118_8_stop:
+        jsr @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_114_8_118_8_finally;
+        pop;
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_114_8_118_8_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_116_10_118_8_end:
+        try @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_114_8_118_8_catch @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_116_10_118_8_end @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_116_10_118_8_end @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_114_8_118_8_finally;
+        jsr @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_114_8_118_8_finally;
+        throw %tmp.5;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_114_8_118_8_finally:
+        jsrret;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_114_8_118_8_end:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 119 8 ]
+        %tmp.12 = self;
+        symbol [ keresesIndit %tmp.13 119 8 20 ];
+        %tmp.13 = getv function %tmp.12 :keresesIndit;
+        invoke %tmp.12 %tmp.13();
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_113_27_120_4_stop:
+    }
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 125; @symbol_functiondef = [onProfileRegister,125,13,30]; @symbol_param<0> = [uuid,125,31,35]; @symbol_param<1> = [status,125,37,43]; ]
+    function onProfileRegister(uuid, status) {
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_125_45_131_4_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 126 8 ]
+        symbol [ profilHivas %tmp.1 126 8 19 ];
+        %tmp.1 = getv self :profilHivas;
+        %tmp.2 = 1;
+        %tmp.3 = add %tmp.1 %tmp.2;
+        symbol [ profilHivas ? 126 8 19 ];
+        putv self :profilHivas dup %tmp.3;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 127 8 ]
+        %tmp.4 = lgetv %status;
+        symbol [ status %tmp.4 127 24 30 ];
+        symbol [ profilStatusz ? 127 8 21 ];
+        putv self :profilStatusz %tmp.4;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 128 8 ]
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_128_8_130_8_if_stmt:
+        %tmp.5 = lgetv %status;
+        symbol [ status %tmp.5 128 12 18 ];
+        symbol [ Ble %tmp.6 128 22 25 ];
+        %tmp.6 = getm $.Toybox.BluetoothLowEnergy;
+        symbol [ STATUS_SUCCESS %tmp.7 128 26 40 ];
+        %tmp.7 = getv %tmp.6 :STATUS_SUCCESS;
+        %tmp.8 = ne %tmp.5 %tmp.7;
+        bf %tmp.8 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_128_8_130_8_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_128_8_130_8_if_true:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_128_42_130_8_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 129 12 ]
+        %tmp.9 = "profil:";
+        %tmp.10 = lgetv %status;
+        symbol [ status %tmp.10 129 31 37 ];
+        %tmp.11 = add %tmp.9 %tmp.10;
+        symbol [ hiba ? 129 12 16 ];
+        putv self :hiba %tmp.11;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_128_42_130_8_stop:
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_128_8_130_8_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_128_8_130_8_if_end:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_125_45_131_4_stop:
+    }
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 134; @symbol_functiondef = [onScanStateChange,134,13,30]; @symbol_param<0> = [scanState,134,31,40]; @symbol_param<1> = [status,134,42,48]; ]
+    function onScanStateChange(scanState, status) {
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_134_50_136_4_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 135 8 ]
+        %tmp.1 = lgetv %scanState;
+        symbol [ scanState %tmp.1 135 25 34 ];
+        symbol [ keresesAllapot ? 135 8 22 ];
+        putv self :keresesAllapot %tmp.1;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_134_50_136_4_stop:
+    }
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 139; @symbol_functiondef = [onScanResults,139,13,26]; @symbol_param<0> = [talalatok,139,27,36]; ]
+    function onScanResults(talalatok) {
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_139_38_169_4_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 140 8 ]
+        for @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_140_8_168_8_for_test @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_140_8_168_8_for_incr @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_140_8_168_8_for_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_140_8_168_8_for_init:
+        [ "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_140_8_168_8_for_begin" "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_140_8_168_8_for_end" ]
+        %t.1 = local;
+        symbol [ t %t.1 140 17 18 ];
+        %tmp.1 = lgetv %talalatok;
+        symbol [ talalatok %tmp.1 140 21 30 ];
+        symbol [ next %tmp.2 140 31 35 ];
+        %tmp.2 = getv function %tmp.1 :next;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %t.1 %tmp.3;
+        symbol [ t %t.1 140 17 18 ];
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_140_8_168_8_for_test:
+        %tmp.4 = lgetv %t.1;
+        symbol [ t %tmp.4 140 39 40 ];
+        %tmp.5 = null;
+        %tmp.6 = ne %tmp.4 %tmp.5;
+        bf %tmp.6 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_140_8_168_8_for_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_140_8_168_8_for_begin:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_140_72_168_8_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 141 12 ]
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_141_12_143_12_if_stmt:
+        %tmp.7 = lgetv %t.1;
+        symbol [ t %tmp.7 141 18 19 ];
+        %tmp.8 = as %tmp.7 { (!Null) };
+        symbol [ Ble %tmp.9 141 31 34 ];
+        %tmp.9 = getm $.Toybox.BluetoothLowEnergy;
+        symbol [ ScanResult %tmp.10 141 35 45 ];
+        %tmp.10 = getv %tmp.9 :ScanResult;
+        %tmp.11 = isa %tmp.8 %tmp.10;
+        %tmp.12 = not %tmp.11;
+        bf %tmp.12 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_141_12_143_12_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_141_12_143_12_if_true:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_141_48_143_12_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 142 16 ]
+        goto break @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_140_8_168_8_for_incr;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_141_48_143_12_stop:
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_141_12_143_12_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_141_12_143_12_if_end:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 144 12 ]
+        symbol [ talalatSzam %tmp.13 144 12 23 ];
+        %tmp.13 = getv self :talalatSzam;
+        %tmp.14 = 1;
+        %tmp.15 = add %tmp.13 %tmp.14;
+        symbol [ talalatSzam ? 144 12 23 ];
+        putv self :talalatSzam dup %tmp.15;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 145 12 ]
+        [ "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_140_72_168_8_start" "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_140_72_168_8_stop" ]
+        %nev.2 = local;
+        symbol [ nev %nev.2 145 16 19 ];
+        %tmp.16 = lgetv %t.1;
+        symbol [ t %tmp.16 145 22 23 ];
+        %tmp.17 = as %tmp.16 { (!Null) };
+        symbol [ getDeviceName %tmp.18 145 24 37 ];
+        %tmp.18 = getv function %tmp.17 :getDeviceName;
+        %tmp.19 = invoke %tmp.17 %tmp.18();
+        lputv %nev.2 %tmp.19;
+        symbol [ nev %nev.2 145 16 19 ];
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 146 12 ]
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_146_12_148_12_if_stmt:
+        %tmp.20 = lgetv %nev.2;
+        symbol [ nev %tmp.20 146 16 19 ];
+        %tmp.21 = null;
+        %tmp.22 = ne %tmp.20 %tmp.21;
+        bf %tmp.22 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_146_12_148_12_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_146_12_148_12_if_true:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_146_29_148_12_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 147 16 ]
+        %tmp.23 = lgetv %nev.2;
+        symbol [ nev %tmp.23 147 28 31 ];
+        %tmp.24 = as %tmp.23 { (!Null) };
+        symbol [ utolsoNev ? 147 16 25 ];
+        putv self :utolsoNev %tmp.24;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_146_29_148_12_stop:
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_146_12_148_12_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_146_12_148_12_if_end:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 149 12 ]
+        %tmp.25 = lgetv %t.1;
+        symbol [ t %tmp.25 149 25 26 ];
+        %tmp.26 = as %tmp.25 { (!Null) };
+        symbol [ getRssi %tmp.27 149 27 34 ];
+        %tmp.27 = getv function %tmp.26 :getRssi;
+        %tmp.28 = invoke %tmp.26 %tmp.27();
+        symbol [ utolsoRssi ? 149 12 22 ];
+        putv self :utolsoRssi %tmp.28;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 151 12 ]
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_151_12_167_12_if_stmt:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_151_16_151_50_begin:
+        symbol [ _kapcsolodva %tmp.30 151 17 29 ];
+        %tmp.30 = getv ? :_kapcsolodva;
+        %tmp.31 = not %tmp.30;
+        bf %tmp.31 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_151_12_167_12_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_151_33_151_50_true:
+        %tmp.32 = self;
+        symbol [ _megfelelo %tmp.33 151 33 43 ];
+        %tmp.33 = getv function %tmp.32 :_megfelelo;
+        %tmp.34 = lgetv %t.1;
+        symbol [ t %tmp.34 151 44 45 ];
+        %tmp.35 = as %tmp.34 { (!Null) };
+        %tmp.36 = lgetv %nev.2;
+        symbol [ nev %tmp.36 151 47 50 ];
+        %tmp.37 = invoke %tmp.32 %tmp.33(%tmp.35, %tmp.36);
+        push %tmp.37;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_151_33_151_50_end:
+        %tmp.38 = phi [%tmp.31 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_151_16_151_50_begin] [%tmp.37 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_151_33_151_50_true] [%tmp.38 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_151_33_151_50_end];
+        bf %tmp.38 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_151_12_167_12_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_151_12_167_12_if_true:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_151_53_167_12_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 152 16 ]
+        try @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_152_16_165_16_beginTry @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_152_16_165_16_endTry @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_152_16_165_16_catch @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_152_16_165_16_finally;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_152_16_165_16_beginTry:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_152_20_162_16_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 153 20 ]
+        symbol [ Ble %tmp.39 153 20 23 ];
+        %tmp.39 = getm $.Toybox.BluetoothLowEnergy;
+        symbol [ setScanState %tmp.40 153 24 36 ];
+        %tmp.40 = getv function %tmp.39 :setScanState;
+        symbol [ Ble %tmp.41 153 37 40 ];
+        %tmp.41 = getm $.Toybox.BluetoothLowEnergy;
+        symbol [ SCAN_STATE_OFF %tmp.42 153 41 55 ];
+        %tmp.42 = getv %tmp.41 :SCAN_STATE_OFF;
+        invoke %tmp.39 %tmp.40(%tmp.42);
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 154 20 ]
+        [ "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_152_20_162_16_start" "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_152_20_162_16_stop" ]
+        %d.3 = local;
+        symbol [ d %d.3 154 24 25 ];
+        symbol [ Ble %tmp.43 154 28 31 ];
+        %tmp.43 = getm $.Toybox.BluetoothLowEnergy;
+        symbol [ pairDevice %tmp.44 154 32 42 ];
+        %tmp.44 = getv function %tmp.43 :pairDevice;
+        %tmp.45 = lgetv %t.1;
+        symbol [ t %tmp.45 154 43 44 ];
+        %tmp.46 = as %tmp.45 { (!Null) };
+        %tmp.47 = invoke %tmp.43 %tmp.44(%tmp.46);
+        lputv %d.3 %tmp.47;
+        symbol [ d %d.3 154 24 25 ];
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 155 20 ]
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_155_20_161_20_if_stmt:
+        %tmp.48 = lgetv %d.3;
+        symbol [ d %tmp.48 155 24 25 ];
+        %tmp.49 = null;
+        %tmp.50 = eq %tmp.48 %tmp.49;
+        bf %tmp.50 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_155_20_161_20_if_else_false;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_155_20_161_20_if_true:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_155_35_158_20_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 156 24 ]
+        %tmp.51 = "pair: null";
+        symbol [ hiba ? 156 24 28 ];
+        putv self :hiba %tmp.51;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 157 24 ]
+        %tmp.52 = self;
+        symbol [ keresesIndit %tmp.53 157 24 36 ];
+        %tmp.53 = getv function %tmp.52 :keresesIndit;
+        invoke %tmp.52 %tmp.53();
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_155_35_158_20_stop:
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_155_20_161_20_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_155_20_161_20_if_else_false:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_158_27_161_20_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 159 24 ]
+        %tmp.54 = lgetv %d.3;
+        symbol [ d %tmp.54 159 34 35 ];
+        %tmp.55 = as %tmp.54 { (!Null) };
+        symbol [ _eszkoz ? 159 24 31 ];
+        putv self :_eszkoz %tmp.55;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 160 24 ]
+        %tmp.56 = "Csatlakozas...";
+        symbol [ allapot ? 160 24 31 ];
+        putv self :allapot %tmp.56;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_158_27_161_20_stop:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_155_20_161_20_if_end:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_152_20_162_16_stop:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_152_16_165_16_endTry:
+        jsr @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_152_16_165_16_finally;
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_152_16_165_16_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_152_16_165_16_catch:
+        %tmp.57 = exception;
+        push %tmp.57;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 162 18 ]
+        [ "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_152_16_165_16_catch" "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_162_18_165_16_end" ]
+        %e.4 = local;
+        symbol [ e %e.4 162 25 26 ];
+        %tmp.58 = dup %tmp.57;
+        lputv %e.4 %tmp.58;
+        symbol [ e %e.4 162 25 26 ];
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_162_28_165_16_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 163 20 ]
+        %tmp.59 = "pair:";
+        %tmp.60 = lgetv %e.4;
+        symbol [ e %tmp.60 163 37 38 ];
+        symbol [ getErrorMessage %tmp.61 163 39 54 ];
+        %tmp.61 = getv function %tmp.60 :getErrorMessage;
+        %tmp.62 = invoke %tmp.60 %tmp.61();
+        %tmp.63 = add %tmp.59 %tmp.62;
+        symbol [ hiba ? 163 20 24 ];
+        putv self :hiba %tmp.63;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 164 20 ]
+        %tmp.64 = self;
+        symbol [ keresesIndit %tmp.65 164 20 32 ];
+        %tmp.65 = getv function %tmp.64 :keresesIndit;
+        invoke %tmp.64 %tmp.65();
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_162_28_165_16_stop:
+        jsr @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_152_16_165_16_finally;
+        pop;
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_152_16_165_16_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_162_18_165_16_end:
+        try @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_152_16_165_16_catch @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_162_18_165_16_end @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_162_18_165_16_end @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_152_16_165_16_finally;
+        jsr @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_152_16_165_16_finally;
+        throw %tmp.57;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_152_16_165_16_finally:
+        jsrret;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_152_16_165_16_end:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 166 16 ]
+        ret ?;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_151_53_167_12_stop:
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_151_12_167_12_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_151_12_167_12_if_end:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_140_72_168_8_stop:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_140_8_168_8_for_incr:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 140 ]
+        %tmp.66 = lgetv %talalatok;
+        symbol [ talalatok %tmp.66 140 54 63 ];
+        symbol [ next %tmp.67 140 64 68 ];
+        %tmp.67 = getv function %tmp.66 :next;
+        %tmp.68 = invoke %tmp.66 %tmp.67();
+        lputv %t.1 %tmp.68;
+        symbol [ t %t.1 140 50 51 ];
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_140_8_168_8_for_test;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_140_8_168_8_for_end:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_139_38_169_4_stop:
+    }
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 172; @symbol_functiondef = [_megfelelo,172,13,23]; @symbol_param<0> = [talalat,172,24,31]; @symbol_param<1> = [nev,172,33,36]; ]
+    function _megfelelo(talalat, nev) {
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_172_38_183_4_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 173 8 ]
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_173_8_175_8_if_stmt:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_173_12_173_42_begin:
+        %tmp.1 = lgetv %nev;
+        symbol [ nev %tmp.1 173 12 15 ];
+        %tmp.2 = null;
+        %tmp.3 = ne %tmp.1 %tmp.2;
+        bf %tmp.3 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_173_8_175_8_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_173_27_173_42_true:
+        %tmp.4 = lgetv %nev;
+        symbol [ nev %tmp.4 173 27 30 ];
+        %tmp.5 = as %tmp.4 { (!Null) };
+        symbol [ equals %tmp.6 173 31 37 ];
+        %tmp.6 = getv function %tmp.5 :equals;
+        symbol [ _nev %tmp.8 173 38 42 ];
+        %tmp.8 = getv ? :_nev;
+        %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
+        push %tmp.9;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_173_27_173_42_end:
+        %tmp.10 = phi [%tmp.3 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_173_12_173_42_begin] [%tmp.9 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_173_27_173_42_true] [%tmp.10 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_173_27_173_42_end];
+        bf %tmp.10 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_173_8_175_8_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_173_8_175_8_if_true:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_173_45_175_8_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 174 12 ]
+        %tmp.11 = true;
+        ret %tmp.11;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_173_45_175_8_stop:
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_173_8_175_8_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_173_8_175_8_if_end:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 176 8 ]
+        [ "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_172_38_183_4_start" "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_172_38_183_4_stop" ]
+        %uuidok.1 = local;
+        symbol [ uuidok %uuidok.1 176 12 18 ];
+        %tmp.12 = lgetv %talalat;
+        symbol [ talalat %tmp.12 176 21 28 ];
+        symbol [ getServiceUuids %tmp.13 176 29 44 ];
+        %tmp.13 = getv function %tmp.12 :getServiceUuids;
+        %tmp.14 = invoke %tmp.12 %tmp.13();
+        lputv %uuidok.1 %tmp.14;
+        symbol [ uuidok %uuidok.1 176 12 18 ];
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 177 8 ]
+        for @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_177_8_181_8_for_test @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_177_8_181_8_for_incr @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_177_8_181_8_for_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_177_8_181_8_for_init:
+        [ "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_177_8_181_8_for_begin" "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_177_8_181_8_for_end" ]
+        %u.2 = local;
+        symbol [ u %u.2 177 17 18 ];
+        %tmp.15 = lgetv %uuidok.1;
+        symbol [ uuidok %tmp.15 177 21 27 ];
+        symbol [ next %tmp.16 177 28 32 ];
+        %tmp.16 = getv function %tmp.15 :next;
+        %tmp.17 = invoke %tmp.15 %tmp.16();
+        lputv %u.2 %tmp.17;
+        symbol [ u %u.2 177 17 18 ];
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_177_8_181_8_for_test:
+        %tmp.18 = lgetv %u.2;
+        symbol [ u %tmp.18 177 36 37 ];
+        %tmp.19 = null;
+        %tmp.20 = ne %tmp.18 %tmp.19;
+        bf %tmp.20 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_177_8_181_8_for_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_177_8_181_8_for_begin:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_177_66_181_8_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 178 12 ]
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_178_12_180_12_if_stmt:
+        %tmp.21 = lgetv %u.2;
+        symbol [ u %tmp.21 178 16 17 ];
+        %tmp.22 = as %tmp.21 { (!Null) };
+        symbol [ equals %tmp.23 178 18 24 ];
+        %tmp.23 = getv function %tmp.22 :equals;
+        symbol [ _szolgUuid %tmp.25 178 25 35 ];
+        %tmp.25 = getv ? :_szolgUuid;
+        %tmp.26 = invoke %tmp.22 %tmp.23(%tmp.25);
+        bf %tmp.26 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_178_12_180_12_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_178_12_180_12_if_true:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_178_38_180_12_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 179 16 ]
+        %tmp.27 = true;
+        ret %tmp.27;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_178_38_180_12_stop:
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_178_12_180_12_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_178_12_180_12_if_end:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_177_66_181_8_stop:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_177_8_181_8_for_incr:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 177 ]
+        %tmp.28 = lgetv %uuidok.1;
+        symbol [ uuidok %tmp.28 177 51 57 ];
+        symbol [ next %tmp.29 177 58 62 ];
+        %tmp.29 = getv function %tmp.28 :next;
+        %tmp.30 = invoke %tmp.28 %tmp.29();
+        lputv %u.2 %tmp.30;
+        symbol [ u %u.2 177 47 48 ];
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_177_8_181_8_for_test;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_177_8_181_8_for_end:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 182 8 ]
+        %tmp.31 = false;
+        ret %tmp.31;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_172_38_183_4_stop:
+    }
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 186; @symbol_functiondef = [onConnectedStateChanged,186,13,36]; @symbol_param<0> = [eszkoz,186,37,43]; @symbol_param<1> = [allapotKod,186,45,55]; ]
+    function onConnectedStateChanged(eszkoz, allapotKod) {
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_186_57_200_4_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 187 8 ]
+        %tmp.1 = lgetv %allapotKod;
+        symbol [ allapotKod %tmp.1 187 23 33 ];
+        symbol [ kapcsolatKod ? 187 8 20 ];
+        putv self :kapcsolatKod %tmp.1;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 188 8 ]
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_188_8_199_8_if_stmt:
+        %tmp.2 = lgetv %allapotKod;
+        symbol [ allapotKod %tmp.2 188 12 22 ];
+        symbol [ Ble %tmp.3 188 26 29 ];
+        %tmp.3 = getm $.Toybox.BluetoothLowEnergy;
+        symbol [ CONNECTION_STATE_CONNECTED %tmp.4 188 30 56 ];
+        %tmp.4 = getv %tmp.3 :CONNECTION_STATE_CONNECTED;
+        %tmp.5 = eq %tmp.2 %tmp.4;
+        bf %tmp.5 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_188_8_199_8_if_else_false;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_188_8_199_8_if_true:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_188_58_193_8_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 189 12 ]
+        %tmp.6 = true;
+        symbol [ _kapcsolodva ? 189 12 24 ];
+        putv self :_kapcsolodva %tmp.6;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 190 12 ]
+        %tmp.7 = lgetv %eszkoz;
+        symbol [ eszkoz %tmp.7 190 22 28 ];
+        symbol [ _eszkoz ? 190 12 19 ];
+        putv self :_eszkoz %tmp.7;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 191 12 ]
+        %tmp.8 = "Kapcsolodva";
+        symbol [ allapot ? 191 12 19 ];
+        putv self :allapot %tmp.8;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 192 12 ]
+        %tmp.9 = self;
+        symbol [ _feliratkozas %tmp.10 192 12 25 ];
+        %tmp.10 = getv function %tmp.9 :_feliratkozas;
+        %tmp.11 = lgetv %eszkoz;
+        symbol [ eszkoz %tmp.11 192 26 32 ];
+        invoke %tmp.9 %tmp.10(%tmp.11);
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_188_58_193_8_stop:
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_188_8_199_8_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_188_8_199_8_if_else_false:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_193_15_199_8_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 194 12 ]
+        %tmp.12 = false;
+        symbol [ _kapcsolodva ? 194 12 24 ];
+        putv self :_kapcsolodva %tmp.12;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 195 12 ]
+        %tmp.13 = null;
+        symbol [ _eszkoz ? 195 12 19 ];
+        putv self :_eszkoz %tmp.13;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 196 12 ]
+        %tmp.14 = null;
+        symbol [ szog ? 196 12 16 ];
+        putv self :szog %tmp.14;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 197 12 ]
+        %tmp.15 = "Ujrakereses";
+        symbol [ allapot ? 197 12 19 ];
+        putv self :allapot %tmp.15;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 198 12 ]
+        %tmp.16 = self;
+        symbol [ keresesIndit %tmp.17 198 12 24 ];
+        %tmp.17 = getv function %tmp.16 :keresesIndit;
+        invoke %tmp.16 %tmp.17();
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_193_15_199_8_stop:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_188_8_199_8_if_end:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_186_57_200_4_stop:
+    }
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 203; @symbol_functiondef = [_feliratkozas,203,13,26]; @symbol_param<0> = [eszkoz,203,27,33]; ]
+    function _feliratkozas(eszkoz) {
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_203_35_215_4_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 204 8 ]
+        try @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_204_8_214_8_beginTry @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_204_8_214_8_endTry @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_204_8_214_8_catch @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_204_8_214_8_finally;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_204_8_214_8_beginTry:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_204_12_212_8_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 205 12 ]
+        [ "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_204_12_212_8_start" "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_204_12_212_8_stop" ]
+        %szolg.1 = local;
+        symbol [ szolg %szolg.1 205 16 21 ];
+        %tmp.1 = lgetv %eszkoz;
+        symbol [ eszkoz %tmp.1 205 24 30 ];
+        symbol [ getService %tmp.2 205 31 41 ];
+        %tmp.2 = getv function %tmp.1 :getService;
+        symbol [ _szolgUuid %tmp.4 205 42 52 ];
+        %tmp.4 = getv ? :_szolgUuid;
+        %tmp.5 = invoke %tmp.1 %tmp.2(%tmp.4);
+        lputv %szolg.1 %tmp.5;
+        symbol [ szolg %szolg.1 205 16 21 ];
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 206 12 ]
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_206_12_206_70_if_stmt:
+        %tmp.6 = lgetv %szolg.1;
+        symbol [ szolg %tmp.6 206 16 21 ];
+        %tmp.7 = null;
+        %tmp.8 = eq %tmp.6 %tmp.7;
+        bf %tmp.8 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_206_12_206_70_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_206_12_206_70_if_true:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_206_31_206_70_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 206 33 ]
+        %tmp.9 = "nincs szolgaltatas";
+        symbol [ hiba ? 206 33 37 ];
+        putv self :hiba %tmp.9;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 206 62 ]
+        jsr @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_204_8_214_8_finally;
+        ret ?;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_206_31_206_70_stop:
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_206_12_206_70_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_206_12_206_70_if_end:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 207 12 ]
+        [ "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_204_12_212_8_start" "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_204_12_212_8_stop" ]
+        %kar.2 = local;
+        symbol [ kar %kar.2 207 16 19 ];
+        %tmp.10 = lgetv %szolg.1;
+        symbol [ szolg %tmp.10 207 22 27 ];
+        symbol [ getCharacteristic %tmp.11 207 28 45 ];
+        %tmp.11 = getv function %tmp.10 :getCharacteristic;
+        symbol [ _szogUuid %tmp.13 207 46 55 ];
+        %tmp.13 = getv ? :_szogUuid;
+        %tmp.14 = invoke %tmp.10 %tmp.11(%tmp.13);
+        lputv %kar.2 %tmp.14;
+        symbol [ kar %kar.2 207 16 19 ];
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 208 12 ]
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_208_12_208_63_if_stmt:
+        %tmp.15 = lgetv %kar.2;
+        symbol [ kar %tmp.15 208 16 19 ];
+        %tmp.16 = null;
+        %tmp.17 = eq %tmp.15 %tmp.16;
+        bf %tmp.17 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_208_12_208_63_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_208_12_208_63_if_true:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_208_29_208_63_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 208 31 ]
+        %tmp.18 = "nincs karakt.";
+        symbol [ hiba ? 208 31 35 ];
+        putv self :hiba %tmp.18;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 208 55 ]
+        jsr @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_204_8_214_8_finally;
+        ret ?;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_208_29_208_63_stop:
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_208_12_208_63_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_208_12_208_63_if_end:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 209 12 ]
+        [ "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_204_12_212_8_start" "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_204_12_212_8_stop" ]
+        %cccd.3 = local;
+        symbol [ cccd %cccd.3 209 16 20 ];
+        %tmp.19 = lgetv %kar.2;
+        symbol [ kar %tmp.19 209 23 26 ];
+        symbol [ getDescriptor %tmp.20 209 27 40 ];
+        %tmp.20 = getv function %tmp.19 :getDescriptor;
+        symbol [ Ble %tmp.21 209 41 44 ];
+        %tmp.21 = getm $.Toybox.BluetoothLowEnergy;
+        symbol [ cccdUuid %tmp.22 209 45 53 ];
+        %tmp.22 = getv function %tmp.21 :cccdUuid;
+        %tmp.23 = invoke %tmp.21 %tmp.22();
+        %tmp.24 = invoke %tmp.19 %tmp.20(%tmp.23);
+        lputv %cccd.3 %tmp.24;
+        symbol [ cccd %cccd.3 209 16 20 ];
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 210 12 ]
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_210_12_210_61_if_stmt:
+        %tmp.25 = lgetv %cccd.3;
+        symbol [ cccd %tmp.25 210 16 20 ];
+        %tmp.26 = null;
+        %tmp.27 = eq %tmp.25 %tmp.26;
+        bf %tmp.27 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_210_12_210_61_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_210_12_210_61_if_true:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_210_30_210_61_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 210 32 ]
+        %tmp.28 = "nincs CCCD";
+        symbol [ hiba ? 210 32 36 ];
+        putv self :hiba %tmp.28;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 210 53 ]
+        jsr @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_204_8_214_8_finally;
+        ret ?;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_210_30_210_61_stop:
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_210_12_210_61_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_210_12_210_61_if_end:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 211 12 ]
+        %tmp.29 = lgetv %cccd.3;
+        symbol [ cccd %tmp.29 211 12 16 ];
+        symbol [ requestWrite %tmp.30 211 17 29 ];
+        %tmp.30 = getv function %tmp.29 :requestWrite;
+        %tmp.31 = newba 2;
+        %tmp.32 = 0x01;
+        %tmp.33 = dup %tmp.31;
+        %tmp.34 = aputv %tmp.33 0 %tmp.32;
+        %tmp.35 = 0x00;
+        %tmp.36 = dup %tmp.34;
+        %tmp.37 = aputv %tmp.36 1 %tmp.35;
+        invoke %tmp.29 %tmp.30(%tmp.37);
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_204_12_212_8_stop:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_204_8_214_8_endTry:
+        jsr @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_204_8_214_8_finally;
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_204_8_214_8_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_204_8_214_8_catch:
+        %tmp.38 = exception;
+        push %tmp.38;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 212 10 ]
+        [ "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_204_8_214_8_catch" "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_212_10_214_8_end" ]
+        %e.4 = local;
+        symbol [ e %e.4 212 17 18 ];
+        %tmp.39 = dup %tmp.38;
+        lputv %e.4 %tmp.39;
+        symbol [ e %e.4 212 17 18 ];
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_212_20_214_8_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 213 12 ]
+        %tmp.40 = "feliratk:";
+        %tmp.41 = lgetv %e.4;
+        symbol [ e %tmp.41 213 33 34 ];
+        symbol [ getErrorMessage %tmp.42 213 35 50 ];
+        %tmp.42 = getv function %tmp.41 :getErrorMessage;
+        %tmp.43 = invoke %tmp.41 %tmp.42();
+        %tmp.44 = add %tmp.40 %tmp.43;
+        symbol [ hiba ? 213 12 16 ];
+        putv self :hiba %tmp.44;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_212_20_214_8_stop:
+        jsr @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_204_8_214_8_finally;
+        pop;
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_204_8_214_8_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_212_10_214_8_end:
+        try @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_204_8_214_8_catch @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_212_10_214_8_end @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_212_10_214_8_end @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_204_8_214_8_finally;
+        jsr @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_204_8_214_8_finally;
+        throw %tmp.38;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_204_8_214_8_finally:
+        jsrret;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_204_8_214_8_end:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_203_35_215_4_stop:
+    }
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 218; @symbol_functiondef = [onDescriptorWrite,218,13,30]; @symbol_param<0> = [descriptor,218,31,41]; @symbol_param<1> = [status,218,43,49]; ]
+    function onDescriptorWrite(descriptor, status) {
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_218_51_224_4_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 219 8 ]
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_219_8_223_8_if_stmt:
+        %tmp.1 = lgetv %status;
+        symbol [ status %tmp.1 219 12 18 ];
+        symbol [ Ble %tmp.2 219 22 25 ];
+        %tmp.2 = getm $.Toybox.BluetoothLowEnergy;
+        symbol [ STATUS_SUCCESS %tmp.3 219 26 40 ];
+        %tmp.3 = getv %tmp.2 :STATUS_SUCCESS;
+        %tmp.4 = eq %tmp.1 %tmp.3;
+        bf %tmp.4 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_219_8_223_8_if_else_false;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_219_8_223_8_if_true:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_219_42_221_8_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 220 12 ]
+        %tmp.5 = "Feliratkozva";
+        symbol [ allapot ? 220 12 19 ];
+        putv self :allapot %tmp.5;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_219_42_221_8_stop:
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_219_8_223_8_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_219_8_223_8_if_else_false:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_221_15_223_8_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 222 12 ]
+        %tmp.6 = "cccd:";
+        %tmp.7 = lgetv %status;
+        symbol [ status %tmp.7 222 29 35 ];
+        %tmp.8 = add %tmp.6 %tmp.7;
+        symbol [ hiba ? 222 12 16 ];
+        putv self :hiba %tmp.8;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_221_15_223_8_stop:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_219_8_223_8_if_end:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_218_51_224_4_stop:
+    }
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 229; @symbol_functiondef = [_olvas,229,13,19]; ]
+    function _olvas() {
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_229_22_247_4_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 230 8 ]
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_230_8_230_39_if_stmt:
+        symbol [ _eszkoz %tmp.2 230 12 19 ];
+        %tmp.2 = getv ? :_eszkoz;
+        %tmp.3 = null;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_230_8_230_39_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_230_8_230_39_if_true:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_230_29_230_39_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 230 31 ]
+        ret ?;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_230_29_230_39_stop:
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_230_8_230_39_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_230_8_230_39_if_end:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 233 8 ]
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_233_8_233_87_if_stmt:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_233_12_233_71_begin:
+        symbol [ _olvasFolyamatban %tmp.6 233 12 29 ];
+        %tmp.6 = getv ? :_olvasFolyamatban;
+        bf %tmp.6 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_233_8_233_87_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_233_33_233_71_true:
+        symbol [ System %tmp.7 233 34 40 ];
+        %tmp.7 = getm $.Toybox.System;
+        symbol [ getTimer %tmp.8 233 41 49 ];
+        %tmp.8 = getv function %tmp.7 :getTimer;
+        %tmp.9 = invoke %tmp.7 %tmp.8();
+        symbol [ _olvasKerveMs %tmp.11 233 54 67 ];
+        %tmp.11 = getv ? :_olvasKerveMs;
+        %tmp.12 = sub %tmp.9 %tmp.11;
+        %tmp.13 = 2000;
+        %tmp.14 = lt %tmp.12 %tmp.13;
+        push %tmp.14;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_233_33_233_71_end:
+        %tmp.15 = phi [%tmp.6 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_233_12_233_71_begin] [%tmp.14 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_233_33_233_71_true] [%tmp.15 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_233_33_233_71_end];
+        bf %tmp.15 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_233_8_233_87_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_233_8_233_87_if_true:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_233_77_233_87_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 233 79 ]
+        ret ?;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_233_77_233_87_stop:
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_233_8_233_87_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_233_8_233_87_if_end:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 234 8 ]
+        try @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_234_8_246_8_beginTry @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_234_8_246_8_endTry @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_234_8_246_8_catch @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_234_8_246_8_finally;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_234_8_246_8_beginTry:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_234_12_243_8_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 235 12 ]
+        [ "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_234_12_243_8_start" "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_234_12_243_8_stop" ]
+        %szolg.1 = local;
+        symbol [ szolg %szolg.1 235 16 21 ];
+        symbol [ _eszkoz %tmp.17 235 24 31 ];
+        %tmp.17 = getv ? :_eszkoz;
+        symbol [ getService %tmp.18 235 32 42 ];
+        %tmp.18 = getv function %tmp.17 :getService;
+        symbol [ _szolgUuid %tmp.20 235 43 53 ];
+        %tmp.20 = getv ? :_szolgUuid;
+        %tmp.21 = invoke %tmp.17 %tmp.18(%tmp.20);
+        lputv %szolg.1 %tmp.21;
+        symbol [ szolg %szolg.1 235 16 21 ];
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 236 12 ]
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_236_12_236_41_if_stmt:
+        %tmp.22 = lgetv %szolg.1;
+        symbol [ szolg %tmp.22 236 16 21 ];
+        %tmp.23 = null;
+        %tmp.24 = eq %tmp.22 %tmp.23;
+        bf %tmp.24 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_236_12_236_41_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_236_12_236_41_if_true:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_236_31_236_41_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 236 33 ]
+        jsr @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_234_8_246_8_finally;
+        ret ?;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_236_31_236_41_stop:
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_236_12_236_41_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_236_12_236_41_if_end:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 237 12 ]
+        [ "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_234_12_243_8_start" "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_234_12_243_8_stop" ]
+        %kar.2 = local;
+        symbol [ kar %kar.2 237 16 19 ];
+        %tmp.25 = lgetv %szolg.1;
+        symbol [ szolg %tmp.25 237 22 27 ];
+        symbol [ getCharacteristic %tmp.26 237 28 45 ];
+        %tmp.26 = getv function %tmp.25 :getCharacteristic;
+        symbol [ _szogUuid %tmp.28 237 46 55 ];
+        %tmp.28 = getv ? :_szogUuid;
+        %tmp.29 = invoke %tmp.25 %tmp.26(%tmp.28);
+        lputv %kar.2 %tmp.29;
+        symbol [ kar %kar.2 237 16 19 ];
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 238 12 ]
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_238_12_238_39_if_stmt:
+        %tmp.30 = lgetv %kar.2;
+        symbol [ kar %tmp.30 238 16 19 ];
+        %tmp.31 = null;
+        %tmp.32 = eq %tmp.30 %tmp.31;
+        bf %tmp.32 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_238_12_238_39_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_238_12_238_39_if_true:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_238_29_238_39_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 238 31 ]
+        jsr @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_234_8_246_8_finally;
+        ret ?;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_238_29_238_39_stop:
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_238_12_238_39_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_238_12_238_39_if_end:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 239 12 ]
+        %tmp.33 = true;
+        symbol [ _olvasFolyamatban ? 239 12 29 ];
+        putv self :_olvasFolyamatban %tmp.33;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 240 12 ]
+        symbol [ tick %tmp.35 240 30 34 ];
+        %tmp.35 = getv ? :tick;
+        symbol [ _olvasKerveTick ? 240 12 27 ];
+        putv self :_olvasKerveTick %tmp.35;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 241 12 ]
+        symbol [ System %tmp.36 241 28 34 ];
+        %tmp.36 = getm $.Toybox.System;
+        symbol [ getTimer %tmp.37 241 35 43 ];
+        %tmp.37 = getv function %tmp.36 :getTimer;
+        %tmp.38 = invoke %tmp.36 %tmp.37();
+        symbol [ _olvasKerveMs ? 241 12 25 ];
+        putv self :_olvasKerveMs %tmp.38;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 242 12 ]
+        %tmp.39 = lgetv %kar.2;
+        symbol [ kar %tmp.39 242 12 15 ];
+        symbol [ requestRead %tmp.40 242 16 27 ];
+        %tmp.40 = getv function %tmp.39 :requestRead;
+        invoke %tmp.39 %tmp.40();
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_234_12_243_8_stop:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_234_8_246_8_endTry:
+        jsr @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_234_8_246_8_finally;
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_234_8_246_8_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_234_8_246_8_catch:
+        %tmp.41 = exception;
+        push %tmp.41;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 243 10 ]
+        [ "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_234_8_246_8_catch" "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_243_10_246_8_end" ]
+        %e.3 = local;
+        symbol [ e %e.3 243 17 18 ];
+        %tmp.42 = dup %tmp.41;
+        lputv %e.3 %tmp.42;
+        symbol [ e %e.3 243 17 18 ];
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_243_20_246_8_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 244 12 ]
+        %tmp.43 = false;
+        symbol [ _olvasFolyamatban ? 244 12 29 ];
+        putv self :_olvasFolyamatban %tmp.43;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 245 12 ]
+        %tmp.44 = "read:";
+        %tmp.45 = lgetv %e.3;
+        symbol [ e %tmp.45 245 29 30 ];
+        symbol [ getErrorMessage %tmp.46 245 31 46 ];
+        %tmp.46 = getv function %tmp.45 :getErrorMessage;
+        %tmp.47 = invoke %tmp.45 %tmp.46();
+        %tmp.48 = add %tmp.44 %tmp.47;
+        symbol [ hiba ? 245 12 16 ];
+        putv self :hiba %tmp.48;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_243_20_246_8_stop:
+        jsr @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_234_8_246_8_finally;
+        pop;
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_234_8_246_8_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_243_10_246_8_end:
+        try @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_234_8_246_8_catch @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_243_10_246_8_end @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_243_10_246_8_end @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_234_8_246_8_finally;
+        jsr @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_234_8_246_8_finally;
+        throw %tmp.41;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_234_8_246_8_finally:
+        jsrret;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_234_8_246_8_end:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_229_22_247_4_stop:
+    }
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 250; @symbol_functiondef = [onCharacteristicRead,250,13,33]; @symbol_param<0> = [kar,250,34,37]; @symbol_param<1> = [status,250,39,45]; @symbol_param<2> = [ertek,250,47,52]; ]
+    function onCharacteristicRead(kar, status, ertek) {
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_250_54_265_4_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 251 8 ]
+        %tmp.1 = false;
+        symbol [ _olvasFolyamatban ? 251 8 25 ];
+        putv self :_olvasFolyamatban %tmp.1;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 252 8 ]
+        symbol [ olvasSzam %tmp.2 252 8 17 ];
+        %tmp.2 = getv self :olvasSzam;
+        %tmp.3 = 1;
+        %tmp.4 = add %tmp.2 %tmp.3;
+        symbol [ olvasSzam ? 252 8 17 ];
+        putv self :olvasSzam dup %tmp.4;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 253 8 ]
+        symbol [ System %tmp.5 253 17 23 ];
+        %tmp.5 = getm $.Toybox.System;
+        symbol [ getTimer %tmp.6 253 24 32 ];
+        %tmp.6 = getv function %tmp.5 :getTimer;
+        %tmp.7 = invoke %tmp.5 %tmp.6();
+        symbol [ _olvasKerveMs %tmp.9 253 37 50 ];
+        %tmp.9 = getv ? :_olvasKerveMs;
+        %tmp.10 = sub %tmp.7 %tmp.9;
+        symbol [ olvLat ? 253 8 14 ];
+        putv self :olvLat %tmp.10;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 254 8 ]
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_254_8_264_8_if_stmt:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_254_12_254_77_begin:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_254_12_254_53_begin:
+        %tmp.11 = lgetv %status;
+        symbol [ status %tmp.11 254 12 18 ];
+        symbol [ Ble %tmp.12 254 22 25 ];
+        %tmp.12 = getm $.Toybox.BluetoothLowEnergy;
+        symbol [ STATUS_SUCCESS %tmp.13 254 26 40 ];
+        %tmp.13 = getv %tmp.12 :STATUS_SUCCESS;
+        %tmp.14 = eq %tmp.11 %tmp.13;
+        bf %tmp.14 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_254_8_264_8_if_else_false;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_254_44_254_53_true:
+        %tmp.15 = lgetv %ertek;
+        symbol [ ertek %tmp.15 254 44 49 ];
+        %tmp.16 = null;
+        %tmp.17 = ne %tmp.15 %tmp.16;
+        push %tmp.17;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_254_44_254_53_end:
+        %tmp.18 = phi [%tmp.14 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_254_12_254_53_begin] [%tmp.17 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_254_44_254_53_true] [%tmp.18 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_254_44_254_53_end];
+        bf %tmp.18 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_254_8_264_8_if_else_false;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_254_61_254_77_true:
+        %tmp.19 = lgetv %ertek;
+        symbol [ ertek %tmp.19 254 61 66 ];
+        %tmp.20 = as %tmp.19 { (!Null) };
+        symbol [ size %tmp.21 254 67 71 ];
+        %tmp.21 = getv function %tmp.20 :size;
+        %tmp.22 = invoke %tmp.20 %tmp.21();
+        %tmp.23 = 2;
+        %tmp.24 = gte %tmp.22 %tmp.23;
+        push %tmp.24;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_254_61_254_77_end:
+        %tmp.25 = phi [%tmp.18 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_254_12_254_77_begin] [%tmp.24 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_254_61_254_77_true] [%tmp.25 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_254_61_254_77_end];
+        bf %tmp.25 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_254_8_264_8_if_else_false;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_254_8_264_8_if_true:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_254_80_262_8_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 255 12 ]
+        [ "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_254_80_262_8_start" "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_254_80_262_8_stop" ]
+        %nyers.1 = local;
+        symbol [ nyers %nyers.1 255 16 21 ];
+        %tmp.26 = lgetv %ertek;
+        symbol [ ertek %tmp.26 255 24 29 ];
+        %tmp.27 = as %tmp.26 { (!Null) };
+        symbol [ decodeNumber %tmp.28 255 30 42 ];
+        %tmp.28 = getv function %tmp.27 :decodeNumber;
+        symbol [ Lang %tmp.29 255 43 47 ];
+        %tmp.29 = getm $.Toybox.Lang;
+        symbol [ NUMBER_FORMAT_SINT16 %tmp.30 255 48 68 ];
+        %tmp.30 = getv %tmp.29 :NUMBER_FORMAT_SINT16;
+        %tmp.31 = newd 1;
+        %tmp.33 = const :endianness;
+        symbol [ endianness %tmp.33 256 45 55 const ];
+        symbol [ Lang %tmp.34 256 59 63 ];
+        %tmp.34 = getm $.Toybox.Lang;
+        symbol [ ENDIAN_LITTLE %tmp.35 256 64 77 ];
+        %tmp.35 = getv %tmp.34 :ENDIAN_LITTLE;
+        %tmp.36 = dup %tmp.31;
+        %tmp.37 = aputv %tmp.36 %tmp.33 %tmp.35;
+        %tmp.38 = invoke %tmp.27 %tmp.28(%tmp.30, %tmp.37);
+        lputv %nyers.1 %tmp.38;
+        symbol [ nyers %nyers.1 255 16 21 ];
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 257 12 ]
+        %tmp.39 = lgetv %nyers.1;
+        symbol [ nyers %tmp.39 257 19 24 ];
+        %tmp.40 = 10.0;
+        %tmp.41 = div %tmp.39 %tmp.40;
+        symbol [ szog ? 257 12 16 ];
+        putv self :szog %tmp.41;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 258 12 ]
+        %tmp.42 = "Olvasas OK";
+        symbol [ allapot ? 258 12 19 ];
+        putv self :allapot %tmp.42;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 261 12 ]
+        %tmp.43 = self;
+        symbol [ _olvas %tmp.44 261 12 18 ];
+        %tmp.44 = getv function %tmp.43 :_olvas;
+        invoke %tmp.43 %tmp.44();
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_254_80_262_8_stop:
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_254_8_264_8_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_254_8_264_8_if_else_false:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_262_15_264_8_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 263 12 ]
+        %tmp.45 = "read st:";
+        %tmp.46 = lgetv %status;
+        symbol [ status %tmp.46 263 32 38 ];
+        %tmp.47 = add %tmp.45 %tmp.46;
+        symbol [ hiba ? 263 12 16 ];
+        putv self :hiba %tmp.47;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_262_15_264_8_stop:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_254_8_264_8_if_end:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_250_54_265_4_stop:
+    }
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 268; @symbol_functiondef = [onCharacteristicChanged,268,13,36]; @symbol_param<0> = [kar,268,37,40]; @symbol_param<1> = [ertek,268,42,47]; ]
+    function onCharacteristicChanged(kar, ertek) {
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_268_49_276_4_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 269 8 ]
+        symbol [ adatSzam %tmp.1 269 8 16 ];
+        %tmp.1 = getv self :adatSzam;
+        %tmp.2 = 1;
+        %tmp.3 = add %tmp.1 %tmp.2;
+        symbol [ adatSzam ? 269 8 16 ];
+        putv self :adatSzam dup %tmp.3;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 270 8 ]
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_270_8_275_8_if_stmt:
+        %tmp.4 = lgetv %ertek;
+        symbol [ ertek %tmp.4 270 12 17 ];
+        symbol [ size %tmp.5 270 18 22 ];
+        %tmp.5 = getv function %tmp.4 :size;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        %tmp.7 = 2;
+        %tmp.8 = gte %tmp.6 %tmp.7;
+        bf %tmp.8 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_270_8_275_8_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_270_8_275_8_if_true:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_270_31_275_8_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 271 12 ]
+        [ "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_270_31_275_8_start" "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_270_31_275_8_stop" ]
+        %nyers.1 = local;
+        symbol [ nyers %nyers.1 271 16 21 ];
+        %tmp.9 = lgetv %ertek;
+        symbol [ ertek %tmp.9 271 24 29 ];
+        symbol [ decodeNumber %tmp.10 271 30 42 ];
+        %tmp.10 = getv function %tmp.9 :decodeNumber;
+        symbol [ Lang %tmp.11 271 43 47 ];
+        %tmp.11 = getm $.Toybox.Lang;
+        symbol [ NUMBER_FORMAT_SINT16 %tmp.12 271 48 68 ];
+        %tmp.12 = getv %tmp.11 :NUMBER_FORMAT_SINT16;
+        %tmp.13 = newd 1;
+        %tmp.15 = const :endianness;
+        symbol [ endianness %tmp.15 272 45 55 const ];
+        symbol [ Lang %tmp.16 272 59 63 ];
+        %tmp.16 = getm $.Toybox.Lang;
+        symbol [ ENDIAN_LITTLE %tmp.17 272 64 77 ];
+        %tmp.17 = getv %tmp.16 :ENDIAN_LITTLE;
+        %tmp.18 = dup %tmp.13;
+        %tmp.19 = aputv %tmp.18 %tmp.15 %tmp.17;
+        %tmp.20 = invoke %tmp.9 %tmp.10(%tmp.12, %tmp.19);
+        lputv %nyers.1 %tmp.20;
+        symbol [ nyers %nyers.1 271 16 21 ];
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 273 12 ]
+        %tmp.21 = lgetv %nyers.1;
+        symbol [ nyers %tmp.21 273 19 24 ];
+        %tmp.22 = 10.0;
+        %tmp.23 = div %tmp.21 %tmp.22;
+        symbol [ szog ? 273 12 16 ];
+        putv self :szog %tmp.23;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc" 274 12 ]
+        %tmp.24 = "Adat OK";
+        symbol [ allapot ? 274 12 19 ];
+        putv self :allapot %tmp.24;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_270_31_275_8_stop:
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_270_8_275_8_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_270_8_275_8_if_end:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanBle_mc_268_49_276_4_stop:
+    }
+}
+[ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanBle.mc"; @line = 1; ]
+<init> {
+}

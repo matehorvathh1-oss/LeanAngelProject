@@ -1,0 +1,514 @@
+[ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanView.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [WatchUi,1,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanView.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [Graphics,2,13,21]; ]
+using Toybox.Graphics;
+[ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanView.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [FitContributor,3,13,27]; ]
+using Toybox.FitContributor;
+[ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanView.mc"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [BluetoothLowEnergy,4,13,31]; @symbol_usingAlias = [Ble,4,35,38]; ]
+using Toybox.BluetoothLowEnergy as :Ble;
+[ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanView.mc"; @line = 8; @position = 6; @symbol_constdef = [DIAG,8,6,10]; ]
+const DIAG = true;
+[ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanView.mc"; @line = 10; @symbol_classdef = [LeanView,10,6,14]; @symbol_extends<0> = [WatchUi,10,23,30]; @symbol_extends<1> = [DataField,10,31,40]; ]
+class LeanView extends WatchUi.DataField {
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanView.mc"; @line = 10; ]
+    <init> {
+    }
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanView.mc"; @line = 10; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanView.mc"; @line = 12; @position = 8; @symbol_vardef = [_ble,12,8,12]; ]
+    var _ble;
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanView.mc"; @line = 13; @position = 8; @symbol_vardef = [_fitMezo,13,8,16]; ]
+    var _fitMezo;
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanView.mc"; @line = 15; @symbol_functiondef = [initialize,15,13,23]; ]
+    function initialize() as Void {
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_15_26_27_4_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanView.mc" 16 8 ]
+        symbol [ DataField %tmp.2 16 8 17 ];
+        %tmp.2 = getv ? :DataField;
+        symbol [ initialize %tmp.3 16 18 28 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanView.mc" 20 8 ]
+        symbol [ LeanBle %tmp.7 20 19 26 ];
+        %tmp.7 = getv ? :LeanBle;
+        %tmp.4 = newc %tmp.7 ();
+        symbol [ _ble ? 20 8 12 ];
+        putv self :_ble %tmp.4;
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanView.mc" 21 8 ]
+        symbol [ Ble %tmp.8 21 8 11 ];
+        %tmp.8 = getm $.Toybox.BluetoothLowEnergy;
+        symbol [ setDelegate %tmp.9 21 12 23 ];
+        %tmp.9 = getv function %tmp.8 :setDelegate;
+        symbol [ _ble %tmp.11 21 24 28 ];
+        %tmp.11 = getv ? :_ble;
+        invoke %tmp.8 %tmp.9(%tmp.11);
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanView.mc" 24 8 ]
+        %tmp.12 = self;
+        symbol [ createField %tmp.13 24 19 30 ];
+        %tmp.13 = getv function %tmp.12 :createField;
+        %tmp.14 = "dolesszog";
+        %tmp.15 = 0;
+        symbol [ FitContributor %tmp.16 25 12 26 ];
+        %tmp.16 = getm $.Toybox.FitContributor;
+        symbol [ DATA_TYPE_FLOAT %tmp.17 25 27 42 ];
+        %tmp.17 = getv %tmp.16 :DATA_TYPE_FLOAT;
+        %tmp.18 = newd 2;
+        %tmp.20 = const :mesgType;
+        symbol [ mesgType %tmp.20 26 14 22 const ];
+        symbol [ FitContributor %tmp.21 26 26 40 ];
+        %tmp.21 = getm $.Toybox.FitContributor;
+        symbol [ MESG_TYPE_RECORD %tmp.22 26 41 57 ];
+        %tmp.22 = getv %tmp.21 :MESG_TYPE_RECORD;
+        %tmp.23 = dup %tmp.18;
+        %tmp.24 = aputv %tmp.23 %tmp.20 %tmp.22;
+        %tmp.26 = const :units;
+        symbol [ units %tmp.26 26 60 65 const ];
+        %tmp.27 = "deg";
+        %tmp.28 = dup %tmp.24;
+        %tmp.29 = aputv %tmp.28 %tmp.26 %tmp.27;
+        %tmp.30 = invoke %tmp.12 %tmp.13(%tmp.14, %tmp.15, %tmp.17, %tmp.29);
+        symbol [ _fitMezo ? 24 8 16 ];
+        putv self :_fitMezo %tmp.30;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_15_26_27_4_stop:
+    }
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanView.mc"; @line = 30; @symbol_functiondef = [compute,30,13,20]; @symbol_param<0> = [info,30,21,25]; ]
+    function compute(info) {
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_30_27_36_4_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanView.mc" 31 8 ]
+        symbol [ _ble %tmp.2 31 8 12 ];
+        %tmp.2 = getv ? :_ble;
+        symbol [ figyelo %tmp.3 31 13 20 ];
+        %tmp.3 = getv function %tmp.2 :figyelo;
+        invoke %tmp.2 %tmp.3();
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanView.mc" 32 8 ]
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_32_8_34_8_if_stmt:
+        symbol [ _ble %tmp.5 32 12 16 ];
+        %tmp.5 = getv ? :_ble;
+        symbol [ szog %tmp.6 32 17 21 ];
+        %tmp.6 = getv %tmp.5 :szog;
+        %tmp.7 = null;
+        %tmp.8 = ne %tmp.6 %tmp.7;
+        bf %tmp.8 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_32_8_34_8_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_32_8_34_8_if_true:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_32_31_34_8_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanView.mc" 33 12 ]
+        symbol [ _fitMezo %tmp.10 33 12 20 ];
+        %tmp.10 = getv ? :_fitMezo;
+        symbol [ setData %tmp.11 33 21 28 ];
+        %tmp.11 = getv function %tmp.10 :setData;
+        symbol [ _ble %tmp.13 33 29 33 ];
+        %tmp.13 = getv ? :_ble;
+        symbol [ szog %tmp.14 33 34 38 ];
+        %tmp.14 = getv %tmp.13 :szog;
+        invoke %tmp.10 %tmp.11(%tmp.14);
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_32_31_34_8_stop:
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_32_8_34_8_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_32_8_34_8_if_end:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanView.mc" 35 8 ]
+        %tmp.15 = null;
+        ret %tmp.15;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_30_27_36_4_stop:
+    }
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanView.mc"; @line = 38; @symbol_functiondef = [onUpdate,38,13,21]; @symbol_param<0> = [dc,38,22,24]; ]
+    function onUpdate(dc) {
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_38_26_73_4_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanView.mc" 39 8 ]
+        [ "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_38_26_73_4_start" "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_38_26_73_4_stop" ]
+        %hatter.1 = local;
+        symbol [ hatter %hatter.1 39 12 18 ];
+        %tmp.1 = self;
+        symbol [ getBackgroundColor %tmp.2 39 21 39 ];
+        %tmp.2 = getv function %tmp.1 :getBackgroundColor;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %hatter.1 %tmp.3;
+        symbol [ hatter %hatter.1 39 12 18 ];
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanView.mc" 40 8 ]
+        %tmp.4 = lgetv %dc;
+        symbol [ dc %tmp.4 40 8 10 ];
+        symbol [ setColor %tmp.5 40 11 19 ];
+        %tmp.5 = getv function %tmp.4 :setColor;
+        symbol [ Graphics %tmp.6 40 20 28 ];
+        %tmp.6 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.7 40 29 46 ];
+        %tmp.7 = getv %tmp.6 :COLOR_TRANSPARENT;
+        %tmp.8 = lgetv %hatter.1;
+        symbol [ hatter %tmp.8 40 48 54 ];
+        invoke %tmp.4 %tmp.5(%tmp.7, %tmp.8);
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanView.mc" 41 8 ]
+        %tmp.9 = lgetv %dc;
+        symbol [ dc %tmp.9 41 8 10 ];
+        symbol [ clear %tmp.10 41 11 16 ];
+        %tmp.10 = getv function %tmp.9 :clear;
+        invoke %tmp.9 %tmp.10();
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanView.mc" 42 8 ]
+        [ "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_38_26_73_4_start" "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_38_26_73_4_stop" ]
+        %elol.2 = local;
+        symbol [ elol %elol.2 42 12 16 ];
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_42_19_42_86_begin:
+        %tmp.11 = lgetv %hatter.1;
+        symbol [ hatter %tmp.11 42 20 26 ];
+        symbol [ Graphics %tmp.12 42 30 38 ];
+        %tmp.12 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.13 42 39 50 ];
+        %tmp.13 = getv %tmp.12 :COLOR_BLACK;
+        %tmp.14 = eq %tmp.11 %tmp.13;
+        bf %tmp.14 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_42_19_42_86_else_false;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_42_19_42_86_true:
+        symbol [ Graphics %tmp.15 42 54 62 ];
+        %tmp.15 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.16 42 63 74 ];
+        %tmp.16 = getv %tmp.15 :COLOR_WHITE;
+        push %tmp.16;
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_42_19_42_86_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_42_19_42_86_else_false:
+        symbol [ Graphics %tmp.17 42 77 85 ];
+        %tmp.17 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.18 42 86 97 ];
+        %tmp.18 = getv %tmp.17 :COLOR_BLACK;
+        push %tmp.18;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_42_19_42_86_end:
+        %tmp.19 = phi [%tmp.14 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_42_19_42_86_begin] [%tmp.16 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_42_19_42_86_true] [%tmp.18 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_42_19_42_86_else_false] [%tmp.19 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_42_19_42_86_end];
+        lputv %elol.2 %tmp.19;
+        symbol [ elol %elol.2 42 12 16 ];
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanView.mc" 43 8 ]
+        %tmp.20 = lgetv %dc;
+        symbol [ dc %tmp.20 43 8 10 ];
+        symbol [ setColor %tmp.21 43 11 19 ];
+        %tmp.21 = getv function %tmp.20 :setColor;
+        %tmp.22 = lgetv %elol.2;
+        symbol [ elol %tmp.22 43 20 24 ];
+        symbol [ Graphics %tmp.23 43 26 34 ];
+        %tmp.23 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.24 43 35 52 ];
+        %tmp.24 = getv %tmp.23 :COLOR_TRANSPARENT;
+        invoke %tmp.20 %tmp.21(%tmp.22, %tmp.24);
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanView.mc" 45 8 ]
+        [ "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_38_26_73_4_start" "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_38_26_73_4_stop" ]
+        %szogSzoveg.3 = local;
+        symbol [ szogSzoveg %szogSzoveg.3 45 12 22 ];
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_45_25_45_74_begin:
+        symbol [ _ble %tmp.26 45 26 30 ];
+        %tmp.26 = getv ? :_ble;
+        symbol [ szog %tmp.27 45 31 35 ];
+        %tmp.27 = getv %tmp.26 :szog;
+        %tmp.28 = null;
+        %tmp.29 = ne %tmp.27 %tmp.28;
+        bf %tmp.29 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_45_25_45_74_else_false;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_45_25_45_74_true:
+        symbol [ _ble %tmp.31 45 47 51 ];
+        %tmp.31 = getv ? :_ble;
+        symbol [ szog %tmp.32 45 52 56 ];
+        %tmp.32 = getv %tmp.31 :szog;
+        symbol [ format %tmp.33 45 57 63 ];
+        %tmp.33 = getv function %tmp.32 :format;
+        %tmp.34 = "%.1f";
+        %tmp.35 = invoke %tmp.32 %tmp.33(%tmp.34);
+        push %tmp.35;
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_45_25_45_74_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_45_25_45_74_else_false:
+        %tmp.36 = "--";
+        push %tmp.36;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_45_25_45_74_end:
+        %tmp.37 = phi [%tmp.29 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_45_25_45_74_begin] [%tmp.35 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_45_25_45_74_true] [%tmp.36 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_45_25_45_74_else_false] [%tmp.37 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_45_25_45_74_end];
+        lputv %szogSzoveg.3 %tmp.37;
+        symbol [ szogSzoveg %szogSzoveg.3 45 12 22 ];
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanView.mc" 47 8 ]
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_47_8_72_8_if_stmt:
+        symbol [ DIAG %tmp.39 47 12 16 ];
+        %tmp.39 = getv ? :DIAG;
+        bf %tmp.39 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_47_8_72_8_if_else_false;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_47_8_72_8_if_true:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_47_18_64_8_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanView.mc" 49 12 ]
+        [ "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_47_18_64_8_start" "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_47_18_64_8_stop" ]
+        %f.4 = local;
+        symbol [ f %f.4 49 16 17 ];
+        symbol [ Graphics %tmp.40 49 20 28 ];
+        %tmp.40 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.41 49 29 39 ];
+        %tmp.41 = getv %tmp.40 :FONT_XTINY;
+        lputv %f.4 %tmp.41;
+        symbol [ f %f.4 49 16 17 ];
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanView.mc" 50 12 ]
+        [ "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_47_18_64_8_start" "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_47_18_64_8_stop" ]
+        %sorMagas.5 = local;
+        symbol [ sorMagas %sorMagas.5 50 16 24 ];
+        symbol [ Graphics %tmp.42 50 27 35 ];
+        %tmp.42 = getm $.Toybox.Graphics;
+        symbol [ getFontHeight %tmp.43 50 36 49 ];
+        %tmp.43 = getv function %tmp.42 :getFontHeight;
+        %tmp.44 = lgetv %f.4;
+        symbol [ f %tmp.44 50 50 51 ];
+        %tmp.45 = invoke %tmp.42 %tmp.43(%tmp.44);
+        lputv %sorMagas.5 %tmp.45;
+        symbol [ sorMagas %sorMagas.5 50 16 24 ];
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanView.mc" 51 12 ]
+        [ "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_47_18_64_8_start" "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_47_18_64_8_stop" ]
+        %sorok.6 = local;
+        symbol [ sorok %sorok.6 51 16 21 ];
+        %tmp.46 = newa 6;
+        %tmp.47 = "ALL: ";
+        symbol [ _ble %tmp.49 52 26 30 ];
+        %tmp.49 = getv ? :_ble;
+        symbol [ allapot %tmp.50 52 31 38 ];
+        %tmp.50 = getv %tmp.49 :allapot;
+        %tmp.51 = add %tmp.47 %tmp.50;
+        %tmp.52 = dup %tmp.46;
+        %tmp.53 = aputv %tmp.52 0 %tmp.51;
+        %tmp.54 = "SZOG: ";
+        %tmp.55 = lgetv %szogSzoveg.3;
+        symbol [ szogSzoveg %tmp.55 53 27 37 ];
+        %tmp.56 = add %tmp.54 %tmp.55;
+        %tmp.57 = dup %tmp.53;
+        %tmp.58 = aputv %tmp.57 1 %tmp.56;
+        %tmp.59 = "prof ";
+        symbol [ _ble %tmp.61 54 26 30 ];
+        %tmp.61 = getv ? :_ble;
+        symbol [ profilHivas %tmp.62 54 31 42 ];
+        %tmp.62 = getv %tmp.61 :profilHivas;
+        %tmp.63 = add %tmp.59 %tmp.62;
+        %tmp.64 = "/";
+        %tmp.65 = add %tmp.63 %tmp.64;
+        symbol [ _ble %tmp.67 54 51 55 ];
+        %tmp.67 = getv ? :_ble;
+        symbol [ profilStatusz %tmp.68 54 56 69 ];
+        %tmp.68 = getv %tmp.67 :profilStatusz;
+        %tmp.69 = add %tmp.65 %tmp.68;
+        %tmp.70 = " scan ";
+        %tmp.71 = add %tmp.69 %tmp.70;
+        symbol [ _ble %tmp.73 54 83 87 ];
+        %tmp.73 = getv ? :_ble;
+        symbol [ keresesAllapot %tmp.74 54 88 102 ];
+        %tmp.74 = getv %tmp.73 :keresesAllapot;
+        %tmp.75 = add %tmp.71 %tmp.74;
+        %tmp.76 = dup %tmp.58;
+        %tmp.77 = aputv %tmp.76 2 %tmp.75;
+        %tmp.78 = "talalat ";
+        symbol [ _ble %tmp.80 55 29 33 ];
+        %tmp.80 = getv ? :_ble;
+        symbol [ talalatSzam %tmp.81 55 34 45 ];
+        %tmp.81 = getv %tmp.80 :talalatSzam;
+        %tmp.82 = add %tmp.78 %tmp.81;
+        %tmp.83 = " ";
+        %tmp.84 = add %tmp.82 %tmp.83;
+        symbol [ _ble %tmp.86 55 54 58 ];
+        %tmp.86 = getv ? :_ble;
+        symbol [ utolsoNev %tmp.87 55 59 68 ];
+        %tmp.87 = getv %tmp.86 :utolsoNev;
+        %tmp.88 = add %tmp.84 %tmp.87;
+        %tmp.89 = " ";
+        %tmp.90 = add %tmp.88 %tmp.89;
+        symbol [ _ble %tmp.92 55 77 81 ];
+        %tmp.92 = getv ? :_ble;
+        symbol [ utolsoRssi %tmp.93 55 82 92 ];
+        %tmp.93 = getv %tmp.92 :utolsoRssi;
+        %tmp.94 = add %tmp.90 %tmp.93;
+        %tmp.95 = dup %tmp.77;
+        %tmp.96 = aputv %tmp.95 3 %tmp.94;
+        %tmp.97 = "kapcs ";
+        symbol [ _ble %tmp.99 56 27 31 ];
+        %tmp.99 = getv ? :_ble;
+        symbol [ kapcsolatKod %tmp.100 56 32 44 ];
+        %tmp.100 = getv %tmp.99 :kapcsolatKod;
+        %tmp.101 = add %tmp.97 %tmp.100;
+        %tmp.102 = " adat ";
+        %tmp.103 = add %tmp.101 %tmp.102;
+        symbol [ _ble %tmp.105 56 58 62 ];
+        %tmp.105 = getv ? :_ble;
+        symbol [ adatSzam %tmp.106 56 63 71 ];
+        %tmp.106 = getv %tmp.105 :adatSzam;
+        %tmp.107 = add %tmp.103 %tmp.106;
+        %tmp.108 = " olv ";
+        %tmp.109 = add %tmp.107 %tmp.108;
+        symbol [ _ble %tmp.111 56 84 88 ];
+        %tmp.111 = getv ? :_ble;
+        symbol [ olvasSzam %tmp.112 56 89 98 ];
+        %tmp.112 = getv %tmp.111 :olvasSzam;
+        %tmp.113 = add %tmp.109 %tmp.112;
+        %tmp.114 = dup %tmp.96;
+        %tmp.115 = aputv %tmp.114 4 %tmp.113;
+        %tmp.116 = "t=";
+        symbol [ _ble %tmp.118 57 23 27 ];
+        %tmp.118 = getv ? :_ble;
+        symbol [ tick %tmp.119 57 28 32 ];
+        %tmp.119 = getv %tmp.118 :tick;
+        %tmp.120 = add %tmp.116 %tmp.119;
+        %tmp.121 = "/";
+        %tmp.122 = add %tmp.120 %tmp.121;
+        symbol [ _ble %tmp.124 57 41 45 ];
+        %tmp.124 = getv ? :_ble;
+        symbol [ masodperc %tmp.125 57 46 55 ];
+        %tmp.125 = getv %tmp.124 :masodperc;
+        %tmp.126 = add %tmp.122 %tmp.125;
+        %tmp.127 = "s lat ";
+        %tmp.128 = add %tmp.126 %tmp.127;
+        symbol [ _ble %tmp.130 57 69 73 ];
+        %tmp.130 = getv ? :_ble;
+        symbol [ olvLat %tmp.131 57 74 80 ];
+        %tmp.131 = getv %tmp.130 :olvLat;
+        %tmp.132 = add %tmp.128 %tmp.131;
+        %tmp.133 = "ms ";
+        %tmp.134 = add %tmp.132 %tmp.133;
+        symbol [ _ble %tmp.136 57 91 95 ];
+        %tmp.136 = getv ? :_ble;
+        symbol [ hiba %tmp.137 57 96 100 ];
+        %tmp.137 = getv %tmp.136 :hiba;
+        %tmp.138 = add %tmp.134 %tmp.137;
+        %tmp.139 = dup %tmp.115;
+        %tmp.140 = aputv %tmp.139 5 %tmp.138;
+        lputv %sorok.6 %tmp.140;
+        symbol [ sorok %sorok.6 51 16 21 ];
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanView.mc" 59 12 ]
+        [ "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_47_18_64_8_start" "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_47_18_64_8_stop" ]
+        %y.7 = local;
+        symbol [ y %y.7 59 16 17 ];
+        %tmp.141 = 0;
+        lputv %y.7 %tmp.141;
+        symbol [ y %y.7 59 16 17 ];
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanView.mc" 60 12 ]
+        for @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_60_12_63_12_for_test @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_60_12_63_12_for_incr @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_60_12_63_12_for_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_60_12_63_12_for_init:
+        [ "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_60_12_63_12_for_begin" "D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_60_12_63_12_for_end" ]
+        %i.8 = local;
+        symbol [ i %i.8 60 21 22 ];
+        %tmp.142 = 0;
+        lputv %i.8 %tmp.142;
+        symbol [ i %i.8 60 21 22 ];
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_60_12_63_12_for_test:
+        %tmp.143 = lgetv %i.8;
+        symbol [ i %tmp.143 60 28 29 ];
+        %tmp.144 = lgetv %sorok.6;
+        symbol [ sorok %tmp.144 60 32 37 ];
+        symbol [ size %tmp.145 60 38 42 ];
+        %tmp.145 = getv function %tmp.144 :size;
+        %tmp.146 = invoke %tmp.144 %tmp.145();
+        %tmp.147 = lt %tmp.143 %tmp.146;
+        bf %tmp.147 @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_60_12_63_12_for_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_60_12_63_12_for_begin:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_60_51_63_12_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanView.mc" 61 16 ]
+        %tmp.148 = lgetv %dc;
+        symbol [ dc %tmp.148 61 16 18 ];
+        symbol [ drawText %tmp.149 61 19 27 ];
+        %tmp.149 = getv function %tmp.148 :drawText;
+        %tmp.150 = 2;
+        %tmp.151 = lgetv %y.7;
+        symbol [ y %tmp.151 61 31 32 ];
+        %tmp.152 = lgetv %f.4;
+        symbol [ f %tmp.152 61 34 35 ];
+        %tmp.153 = lgetv %sorok.6;
+        symbol [ sorok %tmp.153 61 37 42 ];
+        %tmp.154 = lgetv %i.8;
+        symbol [ i %tmp.154 61 43 44 ];
+        %tmp.155 = agetv %tmp.153 %tmp.154;
+        symbol [ Graphics %tmp.156 61 47 55 ];
+        %tmp.156 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.157 61 56 73 ];
+        %tmp.157 = getv %tmp.156 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.148 %tmp.149(%tmp.150, %tmp.151, %tmp.152, %tmp.155, %tmp.157);
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanView.mc" 62 16 ]
+        %tmp.158 = lgetv %y.7;
+        symbol [ y %tmp.158 62 16 17 ];
+        %tmp.159 = lgetv %sorMagas.5;
+        symbol [ sorMagas %tmp.159 62 21 29 ];
+        %tmp.160 = add %tmp.158 %tmp.159;
+        lputv %y.7 %tmp.160;
+        symbol [ y %y.7 62 16 17 ];
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_60_51_63_12_stop:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_60_12_63_12_for_incr:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanView.mc" 60 ]
+        %tmp.163 = lgetv %i.8;
+        symbol [ i %tmp.163 60 46 47 ];
+        %tmp.164 = add %tmp.163 1;
+        lputv %i.8 %tmp.164;
+        symbol [ i %i.8 60 46 47 ];
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_60_12_63_12_for_test;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_60_12_63_12_for_end:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_47_18_64_8_stop:
+        goto @D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_47_8_72_8_if_end;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_47_8_72_8_if_else_false:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_64_15_72_8_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanView.mc" 66 12 ]
+        %tmp.165 = lgetv %dc;
+        symbol [ dc %tmp.165 66 12 14 ];
+        symbol [ drawText %tmp.166 66 15 23 ];
+        %tmp.166 = getv function %tmp.165 :drawText;
+        %tmp.167 = lgetv %dc;
+        symbol [ dc %tmp.167 66 24 26 ];
+        symbol [ getWidth %tmp.168 66 27 35 ];
+        %tmp.168 = getv function %tmp.167 :getWidth;
+        %tmp.169 = invoke %tmp.167 %tmp.168();
+        %tmp.170 = 2;
+        %tmp.171 = div %tmp.169 %tmp.170;
+        %tmp.172 = lgetv %dc;
+        symbol [ dc %tmp.172 66 43 45 ];
+        symbol [ getHeight %tmp.173 66 46 55 ];
+        %tmp.173 = getv function %tmp.172 :getHeight;
+        %tmp.174 = invoke %tmp.172 %tmp.173();
+        %tmp.175 = 2;
+        %tmp.176 = div %tmp.174 %tmp.175;
+        symbol [ Graphics %tmp.177 67 24 32 ];
+        %tmp.177 = getm $.Toybox.Graphics;
+        symbol [ FONT_NUMBER_MEDIUM %tmp.178 67 33 51 ];
+        %tmp.178 = getv %tmp.177 :FONT_NUMBER_MEDIUM;
+        %tmp.179 = lgetv %szogSzoveg.3;
+        symbol [ szogSzoveg %tmp.179 67 53 63 ];
+        %tmp.180 = "°";
+        %tmp.181 = add %tmp.179 %tmp.180;
+        symbol [ Graphics %tmp.182 68 24 32 ];
+        %tmp.182 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.183 68 33 52 ];
+        %tmp.183 = getv %tmp.182 :TEXT_JUSTIFY_CENTER;
+        symbol [ Graphics %tmp.184 68 55 63 ];
+        %tmp.184 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.185 68 64 84 ];
+        %tmp.185 = getv %tmp.184 :TEXT_JUSTIFY_VCENTER;
+        %tmp.186 = bitor %tmp.183 %tmp.185;
+        invoke %tmp.165 %tmp.166(%tmp.171, %tmp.176, %tmp.178, %tmp.181, %tmp.186);
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanView.mc" 69 12 ]
+        %tmp.187 = lgetv %dc;
+        symbol [ dc %tmp.187 69 12 14 ];
+        symbol [ drawText %tmp.188 69 15 23 ];
+        %tmp.188 = getv function %tmp.187 :drawText;
+        %tmp.189 = lgetv %dc;
+        symbol [ dc %tmp.189 69 24 26 ];
+        symbol [ getWidth %tmp.190 69 27 35 ];
+        %tmp.190 = getv function %tmp.189 :getWidth;
+        %tmp.191 = invoke %tmp.189 %tmp.190();
+        %tmp.192 = 2;
+        %tmp.193 = div %tmp.191 %tmp.192;
+        %tmp.194 = lgetv %dc;
+        symbol [ dc %tmp.194 69 43 45 ];
+        symbol [ getHeight %tmp.195 69 46 55 ];
+        %tmp.195 = getv function %tmp.194 :getHeight;
+        %tmp.196 = invoke %tmp.194 %tmp.195();
+        %tmp.197 = 4;
+        %tmp.198 = sub %tmp.196 %tmp.197;
+        symbol [ Graphics %tmp.199 70 24 32 ];
+        %tmp.199 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.200 70 33 43 ];
+        %tmp.200 = getv %tmp.199 :FONT_XTINY;
+        symbol [ _ble %tmp.202 70 45 49 ];
+        %tmp.202 = getv ? :_ble;
+        symbol [ allapot %tmp.203 70 50 57 ];
+        %tmp.203 = getv %tmp.202 :allapot;
+        symbol [ Graphics %tmp.204 71 24 32 ];
+        %tmp.204 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.205 71 33 52 ];
+        %tmp.205 = getv %tmp.204 :TEXT_JUSTIFY_CENTER;
+        symbol [ Graphics %tmp.206 71 55 63 ];
+        %tmp.206 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.207 71 64 84 ];
+        %tmp.207 = getv %tmp.206 :TEXT_JUSTIFY_VCENTER;
+        %tmp.208 = bitor %tmp.205 %tmp.207;
+        invoke %tmp.187 %tmp.188(%tmp.193, %tmp.198, %tmp.200, %tmp.203, %tmp.208);
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_64_15_72_8_stop:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_47_8_72_8_if_end:
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanView_mc_38_26_73_4_stop:
+    }
+}
+[ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanView.mc"; @line = 1; ]
+<init> {
+}

@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<manifest filename="D:\Programozás\Lean angel meres\LeanAngelProject\manifest.xml"/>
+<pcToLineNum>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanView.mc" id="1" lineNum="10" parent="globals/LeanView" pc="268435457" symbol="&lt;init&gt;"/>
+<entry filename="d:\\Programozás\\Lean angel meres\\LeanAngelProject\\bin\\gen\\006-B3122-00\\source\\Rez.mcgen" id="2" lineNum="7" parent="globals/Rez" pc="268435476" symbol="&lt;init&gt;"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanApp.mc" id="3" lineNum="4" parent="globals/LeanApp" pc="268435500" symbol="&lt;init&gt;"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="4" lineNum="20" parent="globals/LeanBle" pc="268435519" symbol="&lt;init&gt;"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanView.mc" id="5" lineNum="30" parent="globals/LeanView" pc="268435538" symbol="compute"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanView.mc" id="5" lineNum="31" parent="globals/LeanView" pc="268435540" symbol="compute"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanView.mc" id="5" lineNum="32" parent="globals/LeanView" pc="268435558" symbol="compute"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanView.mc" id="5" lineNum="33" parent="globals/LeanView" pc="268435577" symbol="compute"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanView.mc" id="5" lineNum="35" parent="globals/LeanView" pc="268435609" symbol="compute"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanView.mc" id="6" lineNum="15" parent="globals/LeanView" pc="268435611" symbol="initialize"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanView.mc" id="6" lineNum="16" parent="globals/LeanView" pc="268435613" symbol="initialize"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanView.mc" id="6" lineNum="20" parent="globals/LeanView" pc="268435631" symbol="initialize"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanView.mc" id="6" lineNum="21" parent="globals/LeanView" pc="268435661" symbol="initialize"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanView.mc" id="6" lineNum="24" parent="globals/LeanView" pc="268435685" symbol="initialize"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanView.mc" id="7" lineNum="38" parent="globals/LeanView" pc="268435752" symbol="onUpdate"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanView.mc" id="7" lineNum="39" parent="globals/LeanView" pc="268435756" symbol="onUpdate"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanView.mc" id="7" lineNum="40" parent="globals/LeanView" pc="268435769" symbol="onUpdate"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanView.mc" id="7" lineNum="41" parent="globals/LeanView" pc="268435788" symbol="onUpdate"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanView.mc" id="7" lineNum="42" parent="globals/LeanView" pc="268435800" symbol="onUpdate"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanView.mc" id="7" lineNum="43" parent="globals/LeanView" pc="268435826" symbol="onUpdate"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanView.mc" id="7" lineNum="45" parent="globals/LeanView" pc="268435845" symbol="onUpdate"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanView.mc" id="7" lineNum="49" parent="globals/LeanView" pc="268435902" symbol="onUpdate"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanView.mc" id="7" lineNum="50" parent="globals/LeanView" pc="268435909" symbol="onUpdate"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanView.mc" id="7" lineNum="51" parent="globals/LeanView" pc="268435928" symbol="onUpdate"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanView.mc" id="7" lineNum="59" parent="globals/LeanView" pc="268436281" symbol="onUpdate"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanView.mc" id="7" lineNum="60" parent="globals/LeanView" pc="268436288" symbol="onUpdate"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanView.mc" id="7" lineNum="61" parent="globals/LeanView" pc="268436312" symbol="onUpdate"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanView.mc" id="7" lineNum="62" parent="globals/LeanView" pc="268436343" symbol="onUpdate"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanApp.mc" id="8" lineNum="10" parent="globals/LeanApp" pc="268436364" symbol="getInitialView"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanApp.mc" id="8" lineNum="11" parent="globals/LeanApp" pc="268436366" symbol="getInitialView"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanApp.mc" id="9" lineNum="5" parent="globals/LeanApp" pc="268436403" symbol="initialize"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanApp.mc" id="9" lineNum="6" parent="globals/LeanApp" pc="268436405" symbol="initialize"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="10" lineNum="229" parent="globals/LeanBle" pc="268436424" symbol="_olvas"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="10" lineNum="230" parent="globals/LeanBle" pc="268436428" symbol="_olvas"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="10" lineNum="230" parent="globals/LeanBle" pc="268436440" symbol="_olvas"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="10" lineNum="233" parent="globals/LeanBle" pc="268436441" symbol="_olvas"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="10" lineNum="233" parent="globals/LeanBle" pc="268436485" symbol="_olvas"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="10" lineNum="235" parent="globals/LeanBle" pc="268436486" symbol="_olvas"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="10" lineNum="236" parent="globals/LeanBle" pc="268436513" symbol="_olvas"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="10" lineNum="236" parent="globals/LeanBle" pc="268436519" symbol="_olvas"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="10" lineNum="237" parent="globals/LeanBle" pc="268436520" symbol="_olvas"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="10" lineNum="238" parent="globals/LeanBle" pc="268436541" symbol="_olvas"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="10" lineNum="238" parent="globals/LeanBle" pc="268436547" symbol="_olvas"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="10" lineNum="239" parent="globals/LeanBle" pc="268436548" symbol="_olvas"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="10" lineNum="240" parent="globals/LeanBle" pc="268436558" symbol="_olvas"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="10" lineNum="241" parent="globals/LeanBle" pc="268436574" symbol="_olvas"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="10" lineNum="242" parent="globals/LeanBle" pc="268436597" symbol="_olvas"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="10" lineNum="243" parent="globals/LeanBle" pc="268436610" symbol="_olvas"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="10" lineNum="244" parent="globals/LeanBle" pc="268436614" symbol="_olvas"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="10" lineNum="245" parent="globals/LeanBle" pc="268436624" symbol="_olvas"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="11" lineNum="125" parent="globals/LeanBle" pc="268436653" symbol="onProfileRegister"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="11" lineNum="126" parent="globals/LeanBle" pc="268436655" symbol="onProfileRegister"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="11" lineNum="127" parent="globals/LeanBle" pc="268436674" symbol="onProfileRegister"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="11" lineNum="128" parent="globals/LeanBle" pc="268436684" symbol="onProfileRegister"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="11" lineNum="129" parent="globals/LeanBle" pc="268436695" symbol="onProfileRegister"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="12" lineNum="250" parent="globals/LeanBle" pc="268436712" symbol="onCharacteristicRead"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="12" lineNum="251" parent="globals/LeanBle" pc="268436716" symbol="onCharacteristicRead"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="12" lineNum="252" parent="globals/LeanBle" pc="268436726" symbol="onCharacteristicRead"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="12" lineNum="253" parent="globals/LeanBle" pc="268436745" symbol="onCharacteristicRead"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="12" lineNum="254" parent="globals/LeanBle" pc="268436777" symbol="onCharacteristicRead"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="12" lineNum="255" parent="globals/LeanBle" pc="268436815" symbol="onCharacteristicRead"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="12" lineNum="257" parent="globals/LeanBle" pc="268436852" symbol="onCharacteristicRead"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="12" lineNum="258" parent="globals/LeanBle" pc="268436868" symbol="onCharacteristicRead"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="12" lineNum="261" parent="globals/LeanBle" pc="268436881" symbol="onCharacteristicRead"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="12" lineNum="263" parent="globals/LeanBle" pc="268436894" symbol="onCharacteristicRead"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="13" lineNum="102" parent="globals/LeanBle" pc="268436911" symbol="keresesIndit"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="13" lineNum="103" parent="globals/LeanBle" pc="268436915" symbol="keresesIndit"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="13" lineNum="105" parent="globals/LeanBle" pc="268436931" symbol="keresesIndit"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="13" lineNum="106" parent="globals/LeanBle" pc="268436952" symbol="keresesIndit"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="13" lineNum="107" parent="globals/LeanBle" pc="268436966" symbol="keresesIndit"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="13" lineNum="108" parent="globals/LeanBle" pc="268436970" symbol="keresesIndit"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="13" lineNum="109" parent="globals/LeanBle" pc="268436995" symbol="keresesIndit"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="14" lineNum="139" parent="globals/LeanBle" pc="268437012" symbol="onScanResults"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="14" lineNum="140" parent="globals/LeanBle" pc="268437016" symbol="onScanResults"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="14" lineNum="141" parent="globals/LeanBle" pc="268437036" symbol="onScanResults"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="14" lineNum="142" parent="globals/LeanBle" pc="268437055" symbol="onScanResults"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="14" lineNum="144" parent="globals/LeanBle" pc="268437058" symbol="onScanResults"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="14" lineNum="145" parent="globals/LeanBle" pc="268437077" symbol="onScanResults"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="14" lineNum="146" parent="globals/LeanBle" pc="268437090" symbol="onScanResults"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="14" lineNum="147" parent="globals/LeanBle" pc="268437097" symbol="onScanResults"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="14" lineNum="149" parent="globals/LeanBle" pc="268437107" symbol="onScanResults"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="14" lineNum="151" parent="globals/LeanBle" pc="268437126" symbol="onScanResults"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="14" lineNum="153" parent="globals/LeanBle" pc="268437156" symbol="onScanResults"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="14" lineNum="154" parent="globals/LeanBle" pc="268437177" symbol="onScanResults"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="14" lineNum="155" parent="globals/LeanBle" pc="268437196" symbol="onScanResults"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="14" lineNum="156" parent="globals/LeanBle" pc="268437202" symbol="onScanResults"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="14" lineNum="157" parent="globals/LeanBle" pc="268437215" symbol="onScanResults"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="14" lineNum="159" parent="globals/LeanBle" pc="268437230" symbol="onScanResults"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="14" lineNum="160" parent="globals/LeanBle" pc="268437240" symbol="onScanResults"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="14" lineNum="162" parent="globals/LeanBle" pc="268437254" symbol="onScanResults"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="14" lineNum="163" parent="globals/LeanBle" pc="268437258" symbol="onScanResults"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="14" lineNum="164" parent="globals/LeanBle" pc="268437283" symbol="onScanResults"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="15" lineNum="61" parent="globals/LeanBle" pc="268437315" symbol="figyelo"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="15" lineNum="62" parent="globals/LeanBle" pc="268437317" symbol="figyelo"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="15" lineNum="63" parent="globals/LeanBle" pc="268437336" symbol="figyelo"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="15" lineNum="66" parent="globals/LeanBle" pc="268437365" symbol="figyelo"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="15" lineNum="67" parent="globals/LeanBle" pc="268437394" symbol="figyelo"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="15" lineNum="68" parent="globals/LeanBle" pc="268437404" symbol="figyelo"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="15" lineNum="69" parent="globals/LeanBle" pc="268437416" symbol="figyelo"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="15" lineNum="74" parent="globals/LeanBle" pc="268437417" symbol="figyelo"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="15" lineNum="75" parent="globals/LeanBle" pc="268437428" symbol="figyelo"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="15" lineNum="79" parent="globals/LeanBle" pc="268437440" symbol="figyelo"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="15" lineNum="80" parent="globals/LeanBle" pc="268437489" symbol="figyelo"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="16" lineNum="268" parent="globals/LeanBle" pc="268437502" symbol="onCharacteristicChanged"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="16" lineNum="269" parent="globals/LeanBle" pc="268437506" symbol="onCharacteristicChanged"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="16" lineNum="270" parent="globals/LeanBle" pc="268437525" symbol="onCharacteristicChanged"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="16" lineNum="271" parent="globals/LeanBle" pc="268437545" symbol="onCharacteristicChanged"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="16" lineNum="273" parent="globals/LeanBle" pc="268437582" symbol="onCharacteristicChanged"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="16" lineNum="274" parent="globals/LeanBle" pc="268437598" symbol="onCharacteristicChanged"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="17" lineNum="203" parent="globals/LeanBle" pc="268437612" symbol="_feliratkozas"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="17" lineNum="205" parent="globals/LeanBle" pc="268437616" symbol="_feliratkozas"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="17" lineNum="206" parent="globals/LeanBle" pc="268437637" symbol="_feliratkozas"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="17" lineNum="206" parent="globals/LeanBle" pc="268437643" symbol="_feliratkozas"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="17" lineNum="206" parent="globals/LeanBle" pc="268437656" symbol="_feliratkozas"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="17" lineNum="207" parent="globals/LeanBle" pc="268437657" symbol="_feliratkozas"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="17" lineNum="208" parent="globals/LeanBle" pc="268437678" symbol="_feliratkozas"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="17" lineNum="208" parent="globals/LeanBle" pc="268437684" symbol="_feliratkozas"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="17" lineNum="208" parent="globals/LeanBle" pc="268437697" symbol="_feliratkozas"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="17" lineNum="209" parent="globals/LeanBle" pc="268437698" symbol="_feliratkozas"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="17" lineNum="210" parent="globals/LeanBle" pc="268437726" symbol="_feliratkozas"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="17" lineNum="210" parent="globals/LeanBle" pc="268437732" symbol="_feliratkozas"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="17" lineNum="210" parent="globals/LeanBle" pc="268437745" symbol="_feliratkozas"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="17" lineNum="211" parent="globals/LeanBle" pc="268437746" symbol="_feliratkozas"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="17" lineNum="212" parent="globals/LeanBle" pc="268437791" symbol="_feliratkozas"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="17" lineNum="213" parent="globals/LeanBle" pc="268437795" symbol="_feliratkozas"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="18" lineNum="218" parent="globals/LeanBle" pc="268437824" symbol="onDescriptorWrite"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="18" lineNum="219" parent="globals/LeanBle" pc="268437826" symbol="onDescriptorWrite"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="18" lineNum="220" parent="globals/LeanBle" pc="268437837" symbol="onDescriptorWrite"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="18" lineNum="222" parent="globals/LeanBle" pc="268437851" symbol="onDescriptorWrite"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="19" lineNum="172" parent="globals/LeanBle" pc="268437868" symbol="_megfelelo"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="19" lineNum="173" parent="globals/LeanBle" pc="268437872" symbol="_megfelelo"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="19" lineNum="174" parent="globals/LeanBle" pc="268437901" symbol="_megfelelo"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="19" lineNum="176" parent="globals/LeanBle" pc="268437904" symbol="_megfelelo"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="19" lineNum="177" parent="globals/LeanBle" pc="268437917" symbol="_megfelelo"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="19" lineNum="178" parent="globals/LeanBle" pc="268437937" symbol="_megfelelo"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="19" lineNum="179" parent="globals/LeanBle" pc="268437959" symbol="_megfelelo"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="19" lineNum="182" parent="globals/LeanBle" pc="268437978" symbol="_megfelelo"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="20" lineNum="134" parent="globals/LeanBle" pc="268437981" symbol="onScanStateChange"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="20" lineNum="135" parent="globals/LeanBle" pc="268437983" symbol="onScanStateChange"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="21" lineNum="186" parent="globals/LeanBle" pc="268437994" symbol="onConnectedStateChanged"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="21" lineNum="187" parent="globals/LeanBle" pc="268437996" symbol="onConnectedStateChanged"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="21" lineNum="188" parent="globals/LeanBle" pc="268438006" symbol="onConnectedStateChanged"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="21" lineNum="189" parent="globals/LeanBle" pc="268438017" symbol="onConnectedStateChanged"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="21" lineNum="190" parent="globals/LeanBle" pc="268438027" symbol="onConnectedStateChanged"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="21" lineNum="191" parent="globals/LeanBle" pc="268438037" symbol="onConnectedStateChanged"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="21" lineNum="192" parent="globals/LeanBle" pc="268438050" symbol="onConnectedStateChanged"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="21" lineNum="194" parent="globals/LeanBle" pc="268438065" symbol="onConnectedStateChanged"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="21" lineNum="195" parent="globals/LeanBle" pc="268438075" symbol="onConnectedStateChanged"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="21" lineNum="196" parent="globals/LeanBle" pc="268438084" symbol="onConnectedStateChanged"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="21" lineNum="197" parent="globals/LeanBle" pc="268438093" symbol="onConnectedStateChanged"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="21" lineNum="198" parent="globals/LeanBle" pc="268438106" symbol="onConnectedStateChanged"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="22" lineNum="85" parent="globals/LeanBle" pc="268438119" symbol="indit"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="22" lineNum="86" parent="globals/LeanBle" pc="268438123" symbol="indit"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="22" lineNum="87" parent="globals/LeanBle" pc="268438136" symbol="indit"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="22" lineNum="95" parent="globals/LeanBle" pc="268438241" symbol="indit"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="22" lineNum="96" parent="globals/LeanBle" pc="268438262" symbol="indit"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="22" lineNum="97" parent="globals/LeanBle" pc="268438266" symbol="indit"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="22" lineNum="99" parent="globals/LeanBle" pc="268438296" symbol="indit"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="23" lineNum="53" parent="globals/LeanBle" pc="268438309" symbol="initialize"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="23" lineNum="54" parent="globals/LeanBle" pc="268438311" symbol="initialize"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="23" lineNum="56" parent="globals/LeanBle" pc="268438329" symbol="initialize"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="23" lineNum="57" parent="globals/LeanBle" pc="268438357" symbol="initialize"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="24" lineNum="113" parent="globals/LeanBle" pc="268438386" symbol="keresesUjra"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="24" lineNum="115" parent="globals/LeanBle" pc="268438390" symbol="keresesUjra"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="24" lineNum="116" parent="globals/LeanBle" pc="268438414" symbol="keresesUjra"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="24" lineNum="117" parent="globals/LeanBle" pc="268438418" symbol="keresesUjra"/>
+<entry filename="D:\\Programozás\\Lean angel meres\\LeanAngelProject\\source\\LeanBle.mc" id="24" lineNum="119" parent="globals/LeanBle" pc="268438448" symbol="keresesUjra"/>
+</pcToLineNum>
+<symbolTable>
+<entry id="8388639" module="true" symbol="Graphics"/>
+<entry field="true" id="18" symbol="_olvasKerveMs"/>
+<entry field="true" id="28" symbol="kapcsolatKod"/>
+<entry field="true" id="41" symbol="utolsoRssi"/>
+<entry id="6" object="true" symbol="LeanBle"/>
+<entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+<entry id="8389849" symbol="units"/>
+<entry field="true" id="33" symbol="olvLat"/>
+<entry id="30" method="true" symbol="keresesIndit"/>
+<entry id="8391342" symbol="endianness"/>
+<entry field="true" id="21" symbol="_szolgUuid"/>
+<entry id="5" object="true" symbol="LeanApp"/>
+<entry field="true" id="32" symbol="masodperc"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry id="8391256" method="true" symbol="onScanResults"/>
+<entry id="16" method="true" symbol="_olvas"/>
+<entry field="true" id="43" symbol="AppName"/>
+<entry id="8391255" method="true" symbol="onScanStateChange"/>
+<entry id="8391262" method="true" symbol="onDescriptorWrite"/>
+<entry id="4" module="true" symbol="globals/Rez/Strings"/>
+<entry field="true" id="19" symbol="_olvasKerveTick"/>
+<entry id="14" method="true" symbol="_megfelelo"/>
+<entry id="8388648" module="true" symbol="WatchUi"/>
+<entry id="2" module="true" symbol="globals/Rez"/>
+<entry field="true" id="38" symbol="talalatSzam"/>
+<entry id="8391340" symbol="descriptors"/>
+<entry id="8391259" method="true" symbol="onCharacteristicRead"/>
+<entry id="31" method="true" symbol="keresesUjra"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry id="25" method="true" symbol="figyelo"/>
+<entry field="true" id="17" symbol="_olvasFolyamatban"/>
+<entry id="8391263" method="true" symbol="onCharacteristicChanged"/>
+<entry field="true" id="8" symbol="_ble"/>
+<entry id="8388771" module="true" object="true" symbol="Drawables"/>
+<entry id="8391258" method="true" symbol="onConnectedStateChanged"/>
+<entry field="true" id="35" symbol="profilHivas"/>
+<entry field="true" id="9" symbol="_fitMezo"/>
+<entry field="true" id="24" symbol="allapot"/>
+<entry field="true" id="40" symbol="utolsoNev"/>
+<entry id="8389137" method="true" symbol="compute"/>
+<entry field="true" id="39" symbol="tick"/>
+<entry field="true" id="10" symbol="_eszkoz"/>
+<entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+<entry field="true" id="12" symbol="_indult"/>
+<entry field="true" id="15" symbol="_nev"/>
+<entry field="true" id="23" symbol="adatSzam"/>
+<entry id="8388644" module="true" symbol="System"/>
+<entry id="8391257" method="true" symbol="onProfileRegister"/>
+<entry field="true" id="37" symbol="szog"/>
+<entry field="true" id="29" symbol="keresesAllapot"/>
+<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry field="true" id="20" symbol="_szogUuid"/>
+<entry id="8388640" module="true" symbol="Lang"/>
+<entry field="true" id="42" symbol="LauncherIcon"/>
+<entry field="true" id="26" symbol="hiba"/>
+<entry id="8388610" symbol="statics"/>
+<entry id="7" object="true" symbol="LeanView"/>
+<entry field="true" id="22" symbol="_utolsoKeresesTick"/>
+<entry id="8389350" module="true" symbol="globals"/>
+<entry id="8391334" symbol="uuid"/>
+<entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry id="8389780" module="true" symbol="FitContributor"/>
+<entry field="true" id="34" symbol="olvasSzam"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry id="8389847" symbol="mesgType"/>
+<entry field="true" id="13" symbol="_kapcsolodva"/>
+<entry id="8391341" symbol="characteristics"/>
+<entry id="11" method="true" symbol="_feliratkozas"/>
+<entry id="27" method="true" symbol="indit"/>
+<entry id="8388635" module="true" symbol="Application"/>
+<entry field="true" id="36" symbol="profilStatusz"/>
+</symbolTable>
+<localVars>
+<entry arg="true" endPc="268435610" name="info" stackId="1" startPc="268435538"/>
+<entry arg="true" endPc="268436363" name="dc" stackId="1" startPc="268435752"/>
+<entry endPc="268436362" name="hatter" stackId="2" startPc="268435756"/>
+<entry endPc="268436362" name="elol" stackId="3" startPc="268435756"/>
+<entry endPc="268436362" name="szogSzoveg" stackId="4" startPc="268435756"/>
+<entry endPc="268436362" name="f" stackId="5" startPc="268435902"/>
+<entry endPc="268436362" name="sorMagas" stackId="6" startPc="268435902"/>
+<entry endPc="268436362" name="sorok" stackId="7" startPc="268435902"/>
+<entry endPc="268436362" name="y" stackId="8" startPc="268435902"/>
+<entry endPc="268436362" name="i" stackId="9" startPc="268436312"/>
+<entry endPc="268436608" name="szolg" stackId="1" startPc="268436486"/>
+<entry endPc="268436608" name="kar" stackId="2" startPc="268436486"/>
+<entry endPc="268436650" name="e" stackId="3" startPc="268436610"/>
+<entry arg="true" endPc="268436711" name="uuid" stackId="1" startPc="268436653"/>
+<entry arg="true" endPc="268436711" name="status" stackId="2" startPc="268436653"/>
+<entry arg="true" endPc="268436910" name="kar" stackId="1" startPc="268436712"/>
+<entry arg="true" endPc="268436910" name="status" stackId="2" startPc="268436712"/>
+<entry arg="true" endPc="268436910" name="ertek" stackId="3" startPc="268436712"/>
+<entry endPc="268436892" name="nyers" stackId="4" startPc="268436815"/>
+<entry endPc="268437009" name="e" stackId="1" startPc="268436966"/>
+<entry arg="true" endPc="268437314" name="talalatok" stackId="1" startPc="268437012"/>
+<entry endPc="268437313" name="t" stackId="2" startPc="268437036"/>
+<entry endPc="268437297" name="nev" stackId="3" startPc="268437036"/>
+<entry endPc="268437252" name="d" stackId="4" startPc="268437156"/>
+<entry endPc="268437296" name="e" stackId="5" startPc="268437254"/>
+<entry arg="true" endPc="268437611" name="kar" stackId="1" startPc="268437502"/>
+<entry arg="true" endPc="268437611" name="ertek" stackId="2" startPc="268437502"/>
+<entry endPc="268437610" name="nyers" stackId="3" startPc="268437545"/>
+<entry arg="true" endPc="268437823" name="eszkoz" stackId="1" startPc="268437612"/>
+<entry endPc="268437789" name="szolg" stackId="2" startPc="268437616"/>
+<entry endPc="268437789" name="kar" stackId="3" startPc="268437616"/>
+<entry endPc="268437789" name="cccd" stackId="4" startPc="268437616"/>
+<entry endPc="268437821" name="e" stackId="5" startPc="268437791"/>
+<entry arg="true" endPc="268437867" name="descriptor" stackId="1" startPc="268437824"/>
+<entry arg="true" endPc="268437867" name="status" stackId="2" startPc="268437824"/>
+<entry arg="true" endPc="268437980" name="talalat" stackId="1" startPc="268437868"/>
+<entry arg="true" endPc="268437980" name="nev" stackId="2" startPc="268437868"/>
+<entry endPc="268437980" name="uuidok" stackId="3" startPc="268437872"/>
+<entry endPc="268437977" name="u" stackId="4" startPc="268437937"/>
+<entry arg="true" endPc="268437993" name="scanState" stackId="1" startPc="268437981"/>
+<entry arg="true" endPc="268437993" name="status" stackId="2" startPc="268437981"/>
+<entry arg="true" endPc="268438118" name="eszkoz" stackId="1" startPc="268437994"/>
+<entry arg="true" endPc="268438118" name="allapotKod" stackId="2" startPc="268437994"/>
+<entry endPc="268438307" name="profil" stackId="1" startPc="268438123"/>
+<entry endPc="268438294" name="e" stackId="2" startPc="268438262"/>
+<entry endPc="268438446" name="e" stackId="1" startPc="268438414"/>
+</localVars>
+<deviceInfo deviceVersion="3d0fb192a2cf01699aefd0f384af3f527e5885bd" partNumber="006-B3122-00"/>
+<annotations>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+</annotations>
+<dataEntryOffsetMappings>
+<dataEntry label="globals" offset="55" parentId="" symbolId="globals" type="module"/>
+<dataEntry label="globals/LeanView" offset="126" parentId="globals" symbolId="LeanView" type="class"/>
+<dataEntry label="globals/Rez" offset="205" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry label="globals/LeanApp" offset="252" parentId="globals" symbolId="LeanApp" type="class"/>
+<dataEntry label="globals/LeanBle" offset="307" parentId="globals" symbolId="LeanBle" type="class"/>
+<dataEntry label="globals/Rez/Drawables" offset="666" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry label="globals/Rez/Strings" offset="705" parentId="Rez" symbolId="Strings" type="module"/>
+</dataEntryOffsetMappings>
+<functions>
+<functionEntry accessMode="public" endPc="268435475" name="&lt;init&gt;" parent="LeanView" startPc="268435457">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435499" name="&lt;init&gt;" parent="Rez" startPc="268435476">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435518" name="&lt;init&gt;" parent="LeanApp" startPc="268435500">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435537" name="&lt;init&gt;" parent="LeanBle" startPc="268435519">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435610" name="compute" parent="LeanView" startPc="268435538">
+<param id="info"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435751" name="initialize" parent="LeanView" startPc="268435611">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436363" name="onUpdate" parent="LeanView" startPc="268435752">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436402" name="getInitialView" parent="LeanApp" startPc="268436364">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436423" name="initialize" parent="LeanApp" startPc="268436403">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436652" name="_olvas" parent="LeanBle" startPc="268436424">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436711" name="onProfileRegister" parent="LeanBle" startPc="268436653">
+<param id="uuid"/>
+<param id="status"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436910" name="onCharacteristicRead" parent="LeanBle" startPc="268436712">
+<param id="kar"/>
+<param id="status"/>
+<param id="ertek"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437011" name="keresesIndit" parent="LeanBle" startPc="268436911">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437314" name="onScanResults" parent="LeanBle" startPc="268437012">
+<param id="talalatok"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437501" name="figyelo" parent="LeanBle" startPc="268437315">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437611" name="onCharacteristicChanged" parent="LeanBle" startPc="268437502">
+<param id="kar"/>
+<param id="ertek"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437823" name="_feliratkozas" parent="LeanBle" startPc="268437612">
+<param id="eszkoz"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437867" name="onDescriptorWrite" parent="LeanBle" startPc="268437824">
+<param id="descriptor"/>
+<param id="status"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437980" name="_megfelelo" parent="LeanBle" startPc="268437868">
+<param id="talalat"/>
+<param id="nev"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437993" name="onScanStateChange" parent="LeanBle" startPc="268437981">
+<param id="scanState"/>
+<param id="status"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438118" name="onConnectedStateChanged" parent="LeanBle" startPc="268437994">
+<param id="eszkoz"/>
+<param id="allapotKod"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438308" name="indit" parent="LeanBle" startPc="268438119">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438385" name="initialize" parent="LeanBle" startPc="268438309">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438460" name="keresesUjra" parent="LeanBle" startPc="268438386">
+<documentation/>
+</functionEntry>
+</functions>
+</debugInfo>

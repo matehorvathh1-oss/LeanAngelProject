@@ -1,0 +1,39 @@
+[ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanApp.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [Application,1,13,24]; ]
+using Toybox.Application;
+[ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanApp.mc"; @line = 4; @symbol_classdef = [LeanApp,4,6,13]; @symbol_extends<0> = [Application,4,22,33]; @symbol_extends<1> = [AppBase,4,34,41]; ]
+class LeanApp extends Application.AppBase {
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanApp.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanApp.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanApp.mc"; @line = 5; @symbol_functiondef = [initialize,5,13,23]; ]
+    function initialize() as Void {
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanApp_mc_5_26_7_4_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanApp.mc" 6 8 ]
+        symbol [ AppBase %tmp.2 6 8 15 ];
+        %tmp.2 = getv ? :AppBase;
+        symbol [ initialize %tmp.3 6 16 26 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanApp_mc_5_26_7_4_stop:
+    }
+    [ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanApp.mc"; @line = 10; @symbol_functiondef = [getInitialView,10,13,27]; ]
+    function getInitialView() {
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanApp_mc_10_30_12_4_start:
+[ "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanApp.mc" 11 8 ]
+        %tmp.1 = newa 1;
+        symbol [ LeanView %tmp.5 11 21 29 ];
+        %tmp.5 = getv ? :LeanView;
+        %tmp.2 = newc %tmp.5 ();
+        %tmp.6 = dup %tmp.1;
+        %tmp.7 = aputv %tmp.6 0 %tmp.2;
+        ret %tmp.7;
+D__Programozás_Lean_angel_meres_LeanAngelProject_source_LeanApp_mc_10_30_12_4_stop:
+    }
+}
+[ @file = "D:\Programozás\Lean angel meres\LeanAngelProject\source\LeanApp.mc"; @line = 1; ]
+<init> {
+}

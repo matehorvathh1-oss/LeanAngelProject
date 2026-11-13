@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<iq:manifest version="3" xmlns:iq="http://www.garmin.com/xml/connectiq">
+    <!-- type="datafield": adatmező. minApiLevel 3.1.0: ettől van BLE -->
+    <iq:application entry="LeanApp" id="94ed3827-f70f-4f09-9325-c1efcc7b8aa6" launcherIcon="@Drawables.LauncherIcon" minApiLevel="3.1.0" name="@Strings.AppName" type="datafield">
+        <iq:products>
+            <iq:product id="edge830"/>
+        </iq:products>
+        <iq:permissions>
+            <!-- BLE: keresés, csatlakozás, adatfogadás -->
+            <!-- FIT: a dőlésszög bekerül az edzésfájlba -->
+            <iq:uses-permission id="BluetoothLowEnergy"/>
+            <iq:uses-permission id="FitContributor"/>
+        </iq:permissions>
+        <iq:languages>
+            <iq:language>eng</iq:language>
+            <iq:language>hun</iq:language>
+        </iq:languages>
+        <iq:barrels/>
+    </iq:application>
+</iq:manifest>
